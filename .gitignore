@@ -41,3 +41,4 @@ manuscript/
 .DS_Store
 data/coraldata/output.beagle
 data/coraldata/output.geno
+analysis/imp*
