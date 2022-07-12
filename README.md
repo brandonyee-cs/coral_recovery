@@ -1,2 +1,2 @@
-# mcap_clonality
+# kb_mcap_clonality
 Montipora capitata genetic, environmental and clonality patterns across Kaneohe Bay
