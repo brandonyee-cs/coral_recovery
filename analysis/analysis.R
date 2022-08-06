@@ -353,7 +353,7 @@ temp_plot<-ggplot()+
 
 sed_plot<-ggplot(sed_plotdata)+geom_boxplot(aes(site,sed,fill=block),outlier.size = 0.5)+
      theme_classic(base_size=8)+
-     ylab('Sedimentatio n\nRate (g/day)')+
+     ylab('Sedimentation\nRate (g/day)')+
      xlab("Site")+
      scale_fill_viridis_d(name="Block")+
      theme(legend.position="none",
