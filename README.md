@@ -10,7 +10,7 @@ Data and code associated with:
 <sup>3</sup> University of Rhode Island, Kingston, RI 02881, USA\
 <sup>4</sup> University of York, Heslington, York YO10 5DD, UK\
 <sup>5</sup> Yale University, New Haven, CT 06520, USA \
-<sup>6</sup> Stanford University, Stanford, CA 94305, USA\
+<sup>6</sup> Stanford University, Stanford, CA 94305, USA
 
 \*these authors contributed equally and are listed in alphabetical order\
 Correspondence: crawford.drury@gmail.com
