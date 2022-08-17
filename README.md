@@ -15,6 +15,7 @@ Data and code associated with:
 \*these authors contributed equally and are listed in alphabetical order\
 Correspondence: crawford.drury@gmail.com
 
+Published in *Molecular Ecology*: https://onlinelibrary.wiley.com/doi/10.1111/mec.16655
 
 The file analysis/working.slurm containts all HPC scripts associated with this project, including data preparation, ANGSD calculations and output. 
 These processed files are available in the data directory. 
