@@ -2,7 +2,7 @@
 
 Data and code associated with:
 
-## Genetic patterns in Montipora capitata across an environmental mosaic in Kāneʻohe Bay
+## Genetic patterns in *Montipora capitata* across an environmental mosaic in Kāneʻohe Bay
 #### Carlo Caruso\*<sup>1</sup>, Mariana Rocha de Souza\*<sup>1</sup>, Lupita Ruiz-Jones<sup>2</sup>, Dennis Conetta<sup>3</sup>, Joshua Hancock<sup>1</sup>, Callum Hobbs<sup>4</sup>, Caroline Hobbs<sup>5</sup>, Valerie Kahkejian<sup>1</sup>, Rebecca Kitchen<sup>1</sup>, Christian Marin<sup>1</sup>, Stephen Monismith<sup>6</sup>, Joshua Madin<sup>1</sup>, Ruth D Gates<sup>1</sup>, Crawford Drury<sup>1</sup>
 
 <sup>1</sup> Hawai‘i Institute of Marine Biology, University of Hawai‘i at Mānoa, Kāneʻohe, HI 96744, USA\
