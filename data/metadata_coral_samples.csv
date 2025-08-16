@@ -1,0 +1,601 @@
+coral_sample,site,id,date_collected,time,direction,distance_from_0_m,left_or_right_of_transect,distance_from_transect_cm,length_cm,width_cm,growth_morph_branch_plate_hybrid_ljrj_fd,notes_ljrj,growth_morph_branch_plate_hybrid_dc,color,health_at_collection_(dc),fluorescence_(y/n_-_color),notes,health_1_(dc_-_9/18-19),health_2_(dc_-_10/3-4),health_2_(cc/mrds-_10/3-4)
+1_2_1,1_2,1,20170814,1000.0,West,7.2,Right,100,95,60,Branch,,Branch,Orange,,,,3.0,,
+1_2_2,1_2,2,20170814,1000.0,West,8.1,Under,,40,30,Branch,,Branch,Brown,,,,3.0,,
+1_2_3,1_2,3,20170814,1000.0,West,8.9,Left,25,25,20,Hybrid,,Branch,Orange,,,,2.0,,
+1_2_4,1_2,4,20170814,1000.0,West,8.8,Right,100,50,40,Branch,,Branch,Orange,,,,,,
+1_2_5,1_2,5,20170814,1000.0,South,3.1,Left,120,40,30,Branch,2 small Mc next to each other,Branch,Orange,,,,,,3.0
+1_2_6,1_2,6,20170814,1000.0,South,10.3,Left,70,45,40,Branch,,Branch,Orange,,,,,,
+1_2_7,1_2,7,20170814,1000.0,South,10,Left,180,>100,>100,Hybrid,,Hybrid,Orange,,,,,,
+1_2_8,1_2,8,20170814,1000.0,East,1,Right,5,>100,>100,Hybrid,,Hybrid,Orange,,,,3.0,,2.0
+1_2_9,1_2,9,20170814,1000.0,East,2.7,Right,50,65,30,Branch,,Branch,Orange,,,,3.0,3.0,2.0
+1_2_10,1_2,10,20170814,1000.0,East,3.3,Under,,65,50,Branch,,Branch,Brown,,,,3.0,3.0,2.0
+1_2_11,1_2,11,20170814,1000.0,East,4,Right,10,40,25,Branch,,Hybrid,Orange,,,,2.0,2.0,1.0
+1_2_12,1_2,12,20170814,1000.0,East,4.6,Under,,>100,>100,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+1_2_13,1_2,13,20170814,1000.0,East,5.4,Under,,65,50,Branch,gold color,Branch,Orange,,,,3.0,3.0,3.0
+1_2_14,1_2,14,20170814,1000.0,East,6.7,Left,15,55,45,Branch,,Branch,Brown,,,,3.0,3.0,
+1_2_15,1_2,15,20170814,1000.0,East,7.4,Left,60,95,70,Branch,,Branch,Orange,,,,,3.0,2.0
+1_2_16,1_2,16,20170814,1000.0,East,8.3,Left,15,45,40,Branch,,Branch,Orange,,,,2.0,3.0,1.5
+1_2_17,1_2,17,20170814,1000.0,East,9.8,Left,40,55,40,Branch,gold color,Branch,Orange,,,,3.0,3.0,3.0
+1_2_18,1_2,18,20170814,1000.0,North,4,Right,10,65,50,Branch,,Branch,Orange,,,,,1.0,
+1_2_19,1_2,19,20170814,1000.0,North,5,Left,10,65,25,Branch,lose,Branch,Orange,,,,3.0,3.0,
+1_2_20,1_2,20,20170814,1000.0,North,6,Left,5,>100,>100,Branch,,Branch,Orange,,,,3.0,3.0,
+1_3_1,1_3,21,20170828,1000.0,West,1.9,Right,100,110,90,Branch,notes not clear; dis fr tape says 100 cm,Branch,Orange,3.0,,some bleached tips but overall very healthy,2.0,3.0,
+1_3_2,1_3,22,20170828,1000.0,West,1.8,Right,60?,90,50,Branch,notes not clear; dis fr tape says 600 cm,Branch,Orange,2.0,,,2.0,,
+1_3_3,1_3,23,20170828,1000.0,West,4,Right,40,70,50,Branch,,Branch,Orange,3.0,,,2.0,3.0,
+1_3_4,1_3,24,20170828,1000.0,West,4.2,Left,140,60,50,Branch,,Branch,Orange,3.0,,,2.0,3.0,
+1_3_5,1_3,25,20170828,1000.0,West,5,Under,,60,60,Branch,,Branch,Orange,3.0,some bleached tips but overall very healthy,,3.0,3.0,
+1_3_6,1_3,26,20170828,1000.0,West,5.2,Right,60,75,40,Branch,,Branch,Orange,2.0,,,3.0,2.0,
+1_3_7,1_3,27,20170828,1000.0,West,5.8,Right,130,75,60,Branch,,Branch,Orange,2.0,,,2.0,2.0,
+1_3_8,1_3,28,20170828,1000.0,West,7.1,Left,10,70,55,Branch,,Branch,Orange,2.0,some bleached portions but only really in one section,,3.0,,
+1_3_9,1_3,29,20170828,1000.0,West,8.3,Right,60,80,50,Branch,,Branch,Orange,3.0,,,3.0,,
+1_3_10,1_3,30,20170828,1000.0,West,10.5,Left,100,90,70,Branch,,Branch,Orange,2.0,,,,,
+1_3_11,1_3,31,20170828,1000.0,South,0.5,Under,,60,35,Branch,,Branch,Orange,2.0,,,2.0,3.0,
+1_3_12,1_3,32,20170828,1000.0,South,0.6,Right,80,70,65,Branch,,Branch,Orange,3.0,,,,3.0,
+1_3_13,1_3,33,20170828,1000.0,South,2.1,Left,50,35,30,Hybrid,,Plate,Orange,3.0,,,3.0,,
+1_3_14,1_3,34,20170828,1000.0,South,3.2,Right,80,70,45,Hybrid,,Hybrid,Orange,3.0,,,2.0,2.0,
+1_3_15,1_3,35,20170828,1000.0,South,3.7,Right,140,130,70,Hybrid,,Hybrid,Brown,2.0,,,,3.0,
+1_3_16,1_3,36,20170828,1000.0,South,3.5,Under,,45,40,Hybrid,,Hybrid,Orange,2.0,,,2.0,2.0,
+1_3_17,1_3,37,20170828,1000.0,South,5.5,Right,100,100,70,Branch,,Branch,Orange,3.0,,,,3.0,
+1_3_18,1_3,38,20170828,1000.0,South,8.5,Under,,110,80,Hybrid,,Hybrid,Orange,3.0,,,,2.0,
+1_3_19,1_3,39,20170828,1000.0,South,10,Right,110,80,50,Hybrid,,Branch,Orange,2.0,,,,2.0,
+1_3_20,1_3,40,20170828,1000.0,South,10.2,Left,30,30,20,,,Hybrid,Brown,2.0,,,,2.0,
+1_4_1,1_4,41,20170828,1045.0,West,1.3,Left,25,30,30,Branch,,Branch,Orange,2.0,,,3.0,2.0,
+1_4_2,1_4,42,20170828,1045.0,West,1.2,Left,90,30,20,Branch,,Branch,Brown,3.0,,,2.0,3.0,
+1_4_3,1_4,43,20170828,1045.0,West,1,Right,100,50,40,Branch,,Branch,Orange,3.0,Y - blue,,3.0,3.0,
+1_4_4,1_4,44,20170828,1045.0,West,1.5,Right,150,55,50,Hybrid,,Hybrid,Brown,3.0,,,,3.0,
+1_4_5,1_4,45,20170828,1045.0,West,3.6,Right,140,65,55,Hybrid,,Hybrid,Brown,2.0,,,2.0,2.0,
+1_4_6,1_4,46,20170828,1045.0,West,5,Left,30,45,45,Branch,,Branch,Brown,3.0,,,,3.0,
+1_4_7,1_4,47,20170828,1045.0,West,6.5,Right,100,45,35,Branch,,Branch,Brown,3.0,,,2.0,3.0,
+1_4_8,1_4,48,20170828,1045.0,West,7.5,Right,20,45,15,Branch,,Branch,Brown,2.0,,,2.0,2.0,
+1_4_9,1_4,49,20170828,1045.0,West,8.3,Right,130,90,70,Hybrid,,Hybrid,Orange,3.0,,,,,
+1_4_10,1_4,50,20170828,1045.0,West,9.3,Left,40,70,45,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+1_4_11,1_4,51,20170828,1045.0,South,1.5,Under,,70,45,Branch,,Branch,Orange,3.0,,,2.0,3.0,
+1_4_12,1_4,52,20170828,1045.0,South,1.4,Left,40,110,70,Hybrid,,Hybrid,Brown,2.0,,,,2.0,
+1_4_13,1_4,53,20170828,1045.0,South,2.5,Under,,80,70,Branch,,Hybrid,Orange,3.0,,,3.0,3.0,
+1_4_14,1_4,54,20170828,1045.0,South,3.5,Right,15,40,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+1_4_15,1_4,55,20170828,1045.0,South,4.6,Left,110,40,20,Branch,,Branch,Brown,3.0,,,,,
+1_4_16,1_4,56,20170828,1045.0,South,5.9,Right,140,60,60,Branch,,Branch,Orange,3.0,,,,3.0,
+1_4_17,1_4,57,20170828,1045.0,South,7.1,Under,,40,20,Hybrid,,Hybrid,Orange,3.0,,,,,
+1_4_18,1_4,58,20170828,1045.0,South,8,Right,90,60,40,Plate,,Plate,Brown,2.0,,,,,
+1_4_19,1_4,59,20170828,1045.0,South,8.9,Right,20,35,30,Branch,,Branch,Brown,3.0,Y - yellow,,,,
+1_4_20,1_4,60,20170828,1045.0,South,9.8,Under,,35,35,,,Branch,Orange,3.0,,,,,
+1_6_1,1_6,61,20170816,1000.0,West,1.1,Left,90,45,35,Branch,,Branch,Orange,3.0,,,3.0,3.0,2.0
+1_6_2,1_6,62,20170816,1000.0,West,1.6,Under,,25,10,Branch,,Branch,Orange,3.0,,,3.0,3.0,2.0
+1_6_3,1_6,63,20170816,1000.0,West,2.1,Left,15,40,10,Branch,,Branch,Brown,2.0,,,3.0,3.0,2.0
+1_6_4,1_6,64,20170816,1000.0,West,2.9,Left,20,35,15,Branch,,Hybrid,Orange,3.0,,,3.0,3.0,2.0
+1_6_5,1_6,65,20170816,1000.0,West,3.1,Right,15,45,45,Branch,,Branch,Orange,3.0,Y - yellow,,3.0,3.0,2.0
+1_6_6,1_6,66,20170816,1000.0,West,3.7,Right,100,30,15,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+1_6_7,1_6,67,20170816,1000.0,West,4.1,Under,,30,20,Branch,,Branch,Orange,3.0,,,,2.0,2.0
+1_6_8,1_6,68,20170816,1000.0,West,4.8,Under,,30,15,Branch,,Branch,Orange,3.0,,,3.0,3.0,2.0
+1_6_9,1_6,69,20170816,1000.0,West,5,Right,100,25,15,Branch,,Branch,Orange,2.0,Y - blue,,3.0,2.0,2.0
+1_6_10,1_6,70,20170816,1000.0,West,5.4,Right,50,25,20,Branch,,Branch,Brown,2.0,Y - yellow,,2.0,2.0,1.0
+1_6_11,1_6,71,20170816,1000.0,West,5.8,Under,,25,10,Branch,,Branch,Brown,2.0,,,3.0,2.0,1.0
+1_6_12,1_6,72,20170816,1000.0,West,6.5,Left,100,35,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,2.0
+1_6_13,1_6,73,20170816,1000.0,West,6.7,Under,,30,15,Branch,,Branch,Orange,3.0,,,3.0,3.0,2.0
+1_6_14,1_6,74,20170816,1000.0,West,7,Left,45,15,15,Branch,,Branch,Brown,2.0,,,,2.0,2.0
+1_6_15,1_6,75,20170816,1000.0,West,7.5,Under,,25,10,Branch,,Branch,Orange,2.0,Y - blue,,3.0,2.0,1.0
+1_6_16,1_6,76,20170816,1000.0,West,8,Right,15,35,25,Branch,,Branch,Brown,2.0,,,2.0,2.0,1.0
+1_6_17,1_6,77,20170816,1000.0,West,8.3,Left,20,30,10,Branch,,Branch,Orange,3.0,,,,3.0,3.0
+1_6_18,1_6,78,20170816,1000.0,West,9.1,Under,,35,25,Branch,,Branch,Orange,3.0,Y - yellow,,,,3.0
+1_6_19,1_6,79,20170816,1000.0,West,9.5,Under,,25,15,Branch,,Branch,Brown,2.0,Y - yellow,,,,3.0
+1_6_20,1_6,80,20170816,1000.0,West,9.7,Right,70,35,10,Branch,,Branch,Brown,1.0,,,,,1.0
+1_9_1,1_9,81,20170828,1200.0,West,0.8,Right,40,80,40,Branch,,Branch,Brown,3.0,,,3.0,3.0,
+1_9_2,1_9,82,20170828,1200.0,West,2.5,Under,,80,50,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+1_9_3,1_9,83,20170828,1200.0,West,3.4,Right,80,90,30,Branch,,Branch,Orange,2.0,Y - blue,,2.0,2.0,
+1_9_4,1_9,84,20170828,1200.0,West,5.1,Right,50,30,20,Branch,,Branch,Orange,2.0,,,,,
+1_9_5,1_9,85,20170828,1200.0,West,6.1,Under,,50,40,Hybrid,,Hybrid,Orange,3.0,,,2.0,3.0,
+1_9_6,1_9,86,20170828,1200.0,West,6.4,Left,70,60,40,Branch,,Branch,Orange,3.0,,,2.0,2.0,
+1_9_7,1_9,87,20170828,1200.0,West,7.1,Under,,80,40,Branch,,Hybrid,Orange,3.0,,,3.0,3.0,
+1_9_8,1_9,88,20170828,1200.0,West,7.5,Left,65,70,25,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+1_9_9,1_9,89,20170828,1200.0,West,7.9,Left,70,50,30,Branch,,Branch,Orange,3.0,,,2.0,,
+1_9_10,1_9,90,20170828,1200.0,West,8.4,Left,100,60,40,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,
+1_9_11,1_9,91,20170828,1200.0,West,9.7,Left,20,90,70,Branch,,Hybrid,Orange,3.0,,,,,
+1_9_12,1_9,92,20170828,1200.0,South,1.2,Left,30,50,50,Branch,,Branch,Orange,2.0,,,,2.0,
+1_9_13,1_9,93,20170828,1200.0,South,4,Left,35,50,25,Branch,,Branch,Orange,3.0,,,,,
+1_9_14,1_9,94,20170828,1200.0,South,5.5,Right,55,35,30,Hybrid,,Branch,Brown,2.0,,,,,
+1_9_15,1_9,95,20170828,1200.0,South,6.2,Right,90,100,70,Branch,,Branch,Orange,2.0,bleached tips ,,,,
+1_9_16,1_9,96,20170828,1200.0,South,6.9,Left,10,40,30,Branch,,Branch,Orange,3.0,,,,,
+1_9_17,1_9,97,20170828,1200.0,South,6.5,Left,110,120,60,Hybrid,,Hybrid,Brown,2.0,,,,,
+1_9_18,1_9,98,20170828,1200.0,South,8.6,Left,10,25,25,Branch,,Branch,Orange,3.0,,,,,
+1_9_19,1_9,99,20170828,1200.0,South,9.3,Left,10,45,30,Hybrid,,Hybrid,Orange,3.0,,,,,
+1_9_20,1_9,100,20170828,1200.0,South,9.2,Right,90,60,30,Branch,,Branch,Orange,3.0,,,,,
+1_10_1,1_10,101,20170828,1230.0,West,0.9,Left,35,30,20,Branch,,Branch,Brown,3.0,,,3.0,3.0,
+1_10_2,1_10,102,20170828,1230.0,West,3.2,Right,70,80,55,Branch,,Branch,Orange,2.0,large section paling/bleached,,,2.0,
+1_10_3,1_10,103,20170828,1230.0,West,3.8,Left,30,35,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+1_10_4,1_10,104,20170828,1230.0,West,5,Under,,100,90,Plate,,Plate,Orange,2.0,,,2.0,3.0,
+1_10_5,1_10,105,20170828,1230.0,West,6.1,Under,,65,45,Hybrid,,Hybrid,Orange,2.0,,,3.0,2.0,
+1_10_6,1_10,106,20170828,1230.0,West,7,Left,50,70,30,Branch,,Branch,Orange,3.0,,,3.0,2.0,
+1_10_7,1_10,107,20170828,1230.0,West,8.3,Right,70,50,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+1_10_8,1_10,108,20170828,1230.0,West,7.8,Right,260,70,60,Hybrid,,Hybrid,Brown,2.0,,,2.0,2.0,
+1_10_9,1_10,109,20170828,1230.0,West,9.8,Left,70,70,40,Branch,,Branch,Orange,3.0,,,,,
+1_10_10,1_10,110,20170828,1230.0,South,1.2,Under,,130,80,Plate,,Hybrid,Orange,2.0,,,2.0,2.0,
+1_10_11,1_10,111,20170828,1230.0,South,2,Under,,70,30,Branch,,Branch,Brown,2.0,,,2.0,2.0,
+1_10_12,1_10,112,20170828,1230.0,South,4.8,Right,40,70,50,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+1_10_13,1_10,113,20170828,1230.0,South,3.1,Under,,50,25,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+1_10_14,1_10,114,20170828,1230.0,South,4.2,Under,,45,25,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+1_10_15,1_10,115,20170828,1230.0,South,5.4,Right,15,45,25,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,
+1_10_16,1_10,116,20170828,1230.0,South,6.2,Under,,50,30,Branch,,Branch,Brown,3.0,,,3.0,3.0,
+1_10_17,1_10,117,20170828,1230.0,South,7.3,Left,15,25,20,Branch,,Branch,Brown,3.0,,,3.0,3.0,
+1_10_18,1_10,118,20170828,1230.0,South,7.8,Left,50,45,30,Branch,,Branch,Orange,3.0,,,2.0,2.0,
+1_10_19,1_10,119,20170828,1230.0,South,7.8,Left,130,75,40,Branch,,Branch,Orange,3.0,,,3.0,,
+1_10_20,1_10,120,20170828,1230.0,South,8.7,Right,75,70,45,Branch,,Branch,Brown,2.0,,,,2.0,
+2_1_1,2_1,121,20170811,1330.0,West,0.5,Right,10,82,53,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+2_1_2,2_1,122,20170811,1330.0,South,1.7,Left,20,>100,>100,Branch,,Branch,Brown,,,,,3.0,3.0
+2_1_3,2_1,123,20170811,1330.0,West,2.8,Left,10,>100,>100,Hybrid,,Branch,Orange,,,,3.0,3.0,3.0
+2_1_4,2_1,124,20170811,1330.0,West,3.6,Under,,>100,>100,Branch,,Branch,Orange,,,,3.0,,3.0
+2_1_5,2_1,125,20170811,1330.0,West,4.6,Left,80,>100,>100,Branch,,Branch,Orange,,,,3.0,1.5,3.0
+2_1_6,2_1,126,20170811,1330.0,West,5.7,Under,,66,39,Branch,,Branch,Orange,,,,3.0,,
+2_1_7,2_1,127,20170811,1330.0,West,6.5,Right,30,74,55,Branch,,Branch,Orange,,,,3.0,,
+2_1_8,2_1,128,20170811,1330.0,West,8,Under,,>100,>100,Branch,,Branch,Brown,,,,2.0,,
+2_1_9,2_1,129,20170811,1330.0,West,10,Under,,70,67,Branch,,Branch,Orange,,,,2.0,,
+2_1_10,2_1,130,20170811,1330.0,South,0.6,Right,10,>100,>100,Branch,,Branch,Orange,,,,3.0,,3.0
+2_1_11,2_1,131,20170811,1330.0,West,1.5,Under,,>100,>100,Branch,,Branch,Orange,,,,2.0,3.0,2.0
+2_1_12,2_1,132,20170811,1330.0,South,3.3,Under,,130,26,Branch,,Branch,Orange,,,,,3.0,3.0
+2_1_13,2_1,133,20170811,1330.0,South,4.6,Left,30,89,61,Branch,,Branch,Orange,,,,,3.0,3.0
+2_1_14,2_1,134,20170811,1330.0,South,5.5,Under,,>100,>100,Branch,,Branch,Orange,,,,,3.0,3.0
+2_1_15,2_1,135,20170811,1330.0,South,6.4,Under,,73,67,Branch,,Branch,Brown,,,,,,
+2_1_16,2_1,136,20170811,1330.0,South,7.8,Left,40,46,30,Branch,,Branch,Brown,,,,,2.5,2.0
+2_1_17,2_1,137,20170811,1330.0,South,8.9,Left,65,33,21,Branch,,Branch,Brown,,,,,2.0,
+2_1_18,2_1,138,20170811,1330.0,South,9.5,Under,,>100,>100,Branch,,Branch,Orange,,,,,2.0,3.0
+2_1_19,2_1,139,20170811,1330.0,East,3.1,Under,,>100,>100,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+2_1_20,2_1,140,20170811,1330.0,East,4.2,Under,,>100,>100,Hybrid,,Hybrid,Brown,,,,3.0,3.0,3.0
+2_2_1,2_2,141,20170814,1230.0,West,1,Right,65,>100,>100,Branch,,Branch,Orange,,,,,3.0,
+2_2_2,2_2,142,20170814,1230.0,West,1.3,Left,70,>100,70,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+2_2_3,2_2,143,20170814,1230.0,West,3.1,Right,20,>100,65,Branch,,Branch,Orange,,,,2.0,2.0,2.0
+2_2_4,2_2,144,20170814,1230.0,West,4.1,Right,30,>100,50,Branch,,Branch,Orange,,,,3.0,3.0,2.0
+2_2_5,2_2,145,20170814,1230.0,West,5.6,Under,,80,40,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+2_2_6,2_2,146,20170814,1230.0,West,5.8,Right,50,80,80,Branch,,Branch,Orange,,,,,3.0,2.0
+2_2_7,2_2,147,20170814,1230.0,West,7,Under,,50,30,Branch,,Branch,Brown,,,,2.0,2.0,2.0
+2_2_8,2_2,148,20170814,1230.0,West,8.3,Right,30,55,50,Branch,,Branch,Orange,,,,2.0,2.0,
+2_2_9,2_2,149,20170814,1230.0,West,9.8,Under,,>100,60,Branch,,Branch,Orange,,,,,,
+2_2_10,2_2,150,20170814,1230.0,South,1.3,Under,,50,25,Branch,,Branch,Orange,,,,3.0,3.0,2.0
+2_2_11,2_2,151,20170814,1230.0,South,3.2,Left,65,>100,35,Hybrid,,Hybrid,Orange,,,,3.0,2.0,2.0
+2_2_12,2_2,152,20170814,1230.0,South,3.8,Under,,35,20,Branch,half dead,Branch,Orange,,,,3.0,3.0,3.0
+2_2_13,2_2,153,20170814,1230.0,South,5.1,Under,,>100,70,Hybrid,,Hybrid,Orange,,,,3.0,2.5,3.0
+2_2_14,2_2,154,20170814,1230.0,South,6.1,Under,,65,30,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+2_2_15,2_2,155,20170814,1230.0,South,7,Right,55,65,40,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+2_2_16,2_2,156,20170814,1230.0,South,7.7,Under,,40,60,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+2_2_17,2_2,157,20170814,1230.0,South,8.4,Under,,70,35,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+2_2_18,2_2,158,20170814,1230.0,South,8.8,Right,60,35,20,Hybrid,,Hybrid,Orange,,,,2.0,2.0,2.0
+2_2_19,2_2,159,20170814,1230.0,South,9.6,Under,,>100,>100,Branch,,Hybrid,Orange,,,,2.0,2.0,2.0
+2_2_20,2_2,160,20170814,1230.0,South,10.3,Left,45,30,25,Branch,,Branch,Orange,,,,2.0,3.0,
+2_3_1,2_3,161,20170822,1700.0,West,1,Right,65,35,10,Branch,put out new hobo because couldn't find original; new way point,Branch,Orange,3.0,Y - yellow,,3.0,3.0,3.0
+2_3_2,2_3,162,20170822,1700.0,West,1,Left,60,35,15,Branch,,Branch,Brown,3.0,,,3.0,3.0,2.0
+2_3_3,2_3,163,20170822,1700.0,West,1.6,Left,60,30,15,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+2_3_4,2_3,164,20170822,1700.0,West,2,Right,35,25,20,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+2_3_5,2_3,165,20170822,1700.0,West,2,Right,175,35,25,Branch,,Branch,Brown,3.0,,,3.0,2.0,2.0
+2_3_6,2_3,166,20170822,1700.0,West,3.5,Right,185,70,35,Branch,,Branch,Brown,3.0,,,2.0,2.0,2.0
+2_3_7,2_3,167,20170822,1700.0,West,4.9,Left,120,15,10,Branch,,Branch,Orange,3.0,,,,2.0,2.0
+2_3_8,2_3,168,20170822,1700.0,West,5.6,Left,50,20,15,Branch,,Branch,Brown,3.0,,,3.0,3.0,3.0
+2_3_9,2_3,169,20170822,1700.0,West,6.2,Right,25,25,15,Branch,,Branch,Brown,2.0,,,3.0,2.0,1.0
+2_3_10,2_3,170,20170822,1700.0,West,5.1,Right,200,20,15,Branch,,Branch,Orange,2.0,,,3.0,2.0,1.0
+2_3_11,2_3,171,20170822,1700.0,West,9.1,Left,130,35,15,Branch,on slope,Branch,Brown,2.0,,,,,
+2_3_12,2_3,172,20170822,1700.0,West,9.8,Right,110,90,90,Branch,on slope,Branch,Orange,3.0,,,,,2.0
+2_3_13,2_3,173,20170822,1700.0,South,1,Left,25,30,10,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+2_3_14,2_3,174,20170822,1700.0,South,1.7,Under,,25,10,Branch,,Branch,Orange,3.0,,,,3.0,3.0
+2_3_15,2_3,175,20170822,1700.0,South,2.2,Left,135,20,15,Branch,,Branch,Orange,3.0,,,,2.0,1.0
+2_3_16,2_3,176,20170822,1700.0,South,2.6,Under,,30,15,Branch,,Branch,Orange,3.0,,,,3.0,3.0
+2_3_17,2_3,177,20170822,1700.0,South,3.5,Under,,30,20,Branch,,Hybrid,Orange,3.0,,,,2.0,2.0
+2_3_18,2_3,178,20170822,1700.0,South,4.2,Left,25,35,25,Branch,,Branch,Orange,3.0,,,,3.0,3.0
+2_3_19,2_3,179,20170822,1700.0,South,4.6,Right,45,25,20,Branch,,Branch,Orange,3.0,,,,2.0,
+2_3_20,2_3,180,20170822,1700.0,South,5.8,Left,30,30,30,Branch,,Hybrid,Orange,3.0,Y - yellow,,,3.0,
+2_4_1,2_4,181,20170811,1145.0,West,1,Left,10,70,60,Branch,,Branch,Brown,,,,,,
+2_4_2,2_4,182,20170811,1145.0,West,4.7,Left,80,100,50,Branch,,Branch,Orange,,,,,,
+2_4_3,2_4,183,20170811,1145.0,West,5.4,Left,30,70,47,Branch,,Branch,Orange,,,,,,
+2_4_4,2_4,184,20170811,1145.0,West,5.4,Right,50,43,28,Branch,,Branch,Orange,,,,,,
+2_4_5,2_4,185,20170811,1145.0,West,6.9,Right,85,85,48,Branch,,Branch,Brown,,,,,,
+2_4_6,2_4,186,20170811,1145.0,West,7.3,Right,0,43,31,Branch,,Branch,Brown,,,,,,
+2_4_7,2_4,187,20170811,1145.0,West,7.9,Right,55,39,15,Branch,,Branch,Orange,,,,,,
+2_4_8,2_4,188,20170811,1145.0,West,9,Right,5,35,20,Branch,,Hybrid,Brown,,,,,,
+2_4_9,2_4,189,20170811,1145.0,West,10,Under,,45,24,Branch,,Branch,Brown,,,,,,
+2_4_10,2_4,190,20170811,1145.0,South,0.5,Left,5,110,50,Branch,,Branch,Orange,,,,2.0,3.0,3.0
+2_4_11,2_4,191,20170811,1145.0,South,2.5,Left,15,60,50,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+2_4_12,2_4,192,20170811,1145.0,South,3.7,Right,60,68,21,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+2_4_13,2_4,193,20170811,1145.0,South,4,Left,70,117,66,Branch,,Branch,Brown,,,,3.0,2.0,2.0
+2_4_14,2_4,194,20170811,1145.0,South,4.8,Under,,68,22,Branch,,Branch,Orange,,,,2.0,3.0,
+2_4_15,2_4,195,20170811,1145.0,South,6.4,Left,60,70,32,Branch,,Branch,Brown,,,,2.0,2.0,2.0
+2_4_16,2_4,196,20170811,1145.0,South,6.6,Under,,53,19,Branch,,Branch,Orange,,,,3.0,3.0,3.0
+2_4_17,2_4,197,20170811,1145.0,South,7.7,Right,55,46,32,Branch,,Hybrid,Brown,,,,2.0,2.0,2.0
+2_4_18,2_4,198,20170811,1145.0,South,8.3,Left,35,36,16,Branch,,Branch,Orange,,,,,,3.0
+2_4_19,2_4,199,20170811,1145.0,South,8.7,Right,40,70,40,Branch,,Branch,Brown,,,,2.0,1.5,2.0
+2_4_20,2_4,200,20170811,1145.0,South,10,Left,5,23,22,Branch,,Branch,Orange,,,,,3.0,3.0
+2_7_1,2_7,201,20170815,1350.0,West,1,Under,,60,40,Branch,,Branch,Orange,3.0,,,,,3.0
+2_7_2,2_7,202,20170815,1350.0,West,1.8,Left,40,75,40,Branch,,Branch,Brown,2.0,,,3.0,3.0,3.0
+2_7_3,2_7,203,20170815,1350.0,West,2.8,Under,,85,60,Branch,,Hybrid,Orange,2.0,,,3.0,3.0,
+2_7_4,2_7,204,20170815,1350.0,West,3.4,Under,,70,70,Branch,,Hybrid,Brown,3.0,,,3.0,3.0,
+2_7_5,2_7,205,20170815,1350.0,West,4.2,Under,,35,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+2_7_6,2_7,206,20170815,1350.0,West,5,Right,20,60,40,Branch,,Branch,Brown,1.0,,,3.0,3.0,3.0
+2_7_7,2_7,207,20170815,1350.0,West,6.1,Right,30,60,45,Branch,,Hybrid,Orange,2.0,,,2.0,2.0,
+2_7_8,2_7,208,20170815,1350.0,West,6.5,Under,,40,25,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,3.0
+2_7_9,2_7,209,20170815,1350.0,West,7,Under,,55,40,Branch,,Hybrid,Orange,3.0,,,3.0,3.0,3.0
+2_7_10,2_7,210,20170815,1350.0,West,8.2,Right,20,70,55,Branch,,Hybrid,Orange,2.0,,,2.0,2.0,3.0
+2_7_11,2_7,211,20170815,1350.0,West,8.5,Left,15,45,30,Branch,,Branch,Brown,2.0,,,,3.0,3.0
+2_7_12,2_7,212,20170815,1350.0,West,9.1,Under,,70,70,Branch,,Hybrid,Brown,2.0,,,3.0,3.0,3.0
+2_7_13,2_7,213,20170815,1350.0,West,10.3,Left,20,80,80,Branch,,Branch,Orange,2.0,,,2.0,3.0,3.0
+2_7_14,2_7,214,20170815,1350.0,South,1,Under,,100,40,Hybrid,,Branch,Orange,3.0,,,3.0,3.0,2.0
+2_7_15,2_7,215,20170815,1350.0,South,1.5,Under,,65,40,Branch,,Hybrid,Brown,2.0,,,,3.0,
+2_7_16,2_7,216,20170815,1350.0,South,2,Under,,85,60,Branch,,Hybrid,Orange,3.0,,,3.0,,
+2_7_17,2_7,217,20170815,1350.0,South,2.6,Right,20,20,25,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+2_7_18,2_7,218,20170815,1350.0,South,3.4,Under,,80,30,Hybrid,,Hybrid,Orange,1.0,,,,2.0,
+2_7_19,2_7,219,20170815,1350.0,South,4.3,Under,,55,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+2_7_20,2_7,220,20170815,1350.0,South,5.4,Under,,45,35,Branch,,Branch,Orange,1.0,,,,,
+2_8_1,2_8,221,20170821,1030.0,West,1,Right,unclear writing,20,20,Branch,today bad paper so potential for mistakes,Branch,Orange,2.0,,,2.0,,2.0
+2_8_2,2_8,222,20170821,1030.0,West,1.1,Left,unclear writing,15,10,Branch,,Branch,Orange,2.0,,,3.0,,2.0
+2_8_3,2_8,223,20170821,1030.0,West,1.8,Left,50,25,15,Branch,,Branch,Orange,3.0,Y - yellow,,3.0,,2.0
+2_8_4,2_8,224,20170821,1030.0,West,2.2,Left,40,15,10,Branch,,Branch,Orange,3.0,,,3.0,,
+2_8_5,2_8,225,20170821,1030.0,West,4.3,Left,140,25,15,Branch,,Branch,Orange,1.0,,,1.0,,
+2_8_6,2_8,226,20170821,1030.0,West,6.5,Left,170,65,50,Branch,,Branch,Brown,1.0,,,2.0,2.0,1.0
+2_8_7,2_8,227,20170821,1030.0,West,6.9,Left,100,15,15,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+2_8_8,2_8,228,20170821,1030.0,West,5,Left,90,30,15,Branch,,Branch,Orange,2.0,Y - blue,Fluor. almost entire colony,,3.0,
+2_8_9,2_8,229,20170821,1030.0,South,2,Right,140,30,20,Branch,,Branch,Brown,2.0,,,,3.0,2.0
+2_8_10,2_8,230,20170821,1030.0,South,2.7,Right,200,25,15,Branch,,Branch,Brown,2.0,Y - yellow,,3.0,3.0,
+2_8_11,2_8,231,20170821,1030.0,South,3.2,Right,200,25,20,Branch,,Branch,Orange,2.0,Y - blue,,,3.0,
+2_8_12,2_8,232,20170821,1030.0,East,1.4,Left,200,25,15,Branch,,Branch,Orange,3.0,,,,,
+2_8_13,2_8,233,20170821,1030.0,East,3.6,Under,,20,20,Branch,,Branch,Orange,3.0,,,,,
+2_8_14,2_8,234,20170821,1030.0,East,4.2,Left,25,20,15,Branch,,Branch,Brown,3.0,,,,,
+2_8_15,2_8,235,20170821,1030.0,East,9,Left,200,35,25,Branch,,Branch,Orange,3.0,,,,,
+2_8_16,2_8,236,20170821,1030.0,East,10.3,Under,,35,25,Branch,,Branch,Brown,2.0,,,,,
+2_8_17,2_8,237,20170821,1030.0,North,2.5,Right,110,20,20,Branch,,Branch,Brown,3.0,,,,,2.0
+2_8_18,2_8,238,20170821,1030.0,North,3.8,Right,85,30,20,Branch,,Branch,Brown,2.0,,,,,3.0
+2_8_19,2_8,239,20170821,1030.0,North,1.5,Left,140,45,15,Branch,,Branch,Brown,1.0,Y - yellow,,2.0,2.0,1.0
+2_8_20,2_8,240,20170821,1030.0,nope,,,,,,,too deep,,,,,Not enough corals within depth,,,
+3_2_1,3_2,241,20170821,1230.0,West,0.8,Under,,45,20,Hybrid,today bad paper so potential for mistakes,Plate,Orange,3.0,,,,,
+3_2_2,3_2,242,20170821,1230.0,West,4,Right,135,25,20,Hybrid,under ledge,Hybrid,Orange,3.0,,,,3.0,
+3_2_3,3_2,243,20170821,1230.0,West,3.8,Left,50,15,10,Branch,,Branch,Brown,3.0,,,,2.0,2.0
+3_2_4,3_2,244,20170821,1230.0,West,4.5,Right,190,15,15,Plate,,Plate,Orange,3.0,,,,2.0,
+3_2_5,3_2,245,20170821,1230.0,West,6,Left,165,15,15,Branch,,Branch,Orange,2.0,,,,,
+3_2_6,3_2,246,20170821,1230.0,West,8,Left,160,35,15,Branch,,Branch,Orange,2.0,Y - yellow,,,,2.0
+3_2_7,3_2,247,20170821,1230.0,West,8.5,Right,25,20,10,Branch,,Branch,Orange,3.0,,,,2.0,1.0
+3_2_8,3_2,248,20170821,1230.0,West,9.7,Right,60,25,10,Hybrid,under ledge,Plate,Brown,3.0,,,,3.0,3.0
+3_2_9,3_2,249,20170821,1230.0,South,6.4,Left,135,15,15,Branch,,Branch,Brown,2.0,Y - yellow,,,,2.0
+3_2_10,3_2,250,20170821,1230.0,South,7.5,Left,30,25,15,Branch,,Branch,Brown,2.0,,,,,1.0
+3_2_11,3_2,251,20170821,1230.0,South,8.4,Left,110,10,10,Branch,,Branch,Orange,2.0,,,2.0,,3.0
+3_2_12,3_2,252,20170821,1230.0,South,9,Under,,15,10,Branch,,Branch,Orange,2.0,,,2.0,,2.0
+3_2_13,3_2,253,20170821,1230.0,South,9.1,Right,65,15,10,Branch,,Branch,Orange,3.0,,,3.0,,3.0
+3_2_14,3_2,254,20170821,1230.0,South,9.5,Right,40,15,10,Branch,,Hybrid,Orange,3.0,Y - blue,,2.0,,2.0
+3_2_15,3_2,255,20170821,1230.0,South,9.5,Left,25,40,20,Branch,,Branch,Brown,3.0,Y - yellow,,2.0,,3.0
+3_2_16,3_2,256,20170821,1230.0,South,10.4,Under,,20,20,Branch,,Branch,Orange,3.0,,,3.0,,3.0
+3_2_17,3_2,257,20170821,1230.0,East,6.8,Left,130,20,20,Hybrid,under ledge,Plate,Brown,3.0,,,,,
+3_2_18,3_2,258,20170821,1230.0,nope,,,,,,,too deep and zero Mc,,,,,Not enough corals in sample area to complete samples,,,
+3_2_19,3_2,259,20170821,1230.0,nope,,,,,,,too deep and zero Mc,,,,,,,,
+3_2_20,3_2,260,20170821,1230.0,nope,,,,,,,too deep and zero Mc,,,,,,,,
+3_3_1,3_3,261,20170816,1330.0,West,6.8,Right,160,30,10,Hybrid,,Hybrid,Orange,2.0,,,3.0,3.0,3.0
+3_3_2,3_3,262,20170816,1330.0,West,7.8,Right,55,20,15,Hybrid,,Hybrid,Brown,3.0,,,3.0,3.0,3.0
+3_3_3,3_3,263,20170816,1330.0,South,4.8,Right,15,30,25,Branch,,Branch,Brown,2.0,,,2.0,2.0,2.0
+3_3_4,3_3,264,20170816,1330.0,South,5.1,Left,30,40,30,Branch,,Branch,Orange,1.0,,"Branches very thin, resembled fire coral",2.0,2.0,2.0
+3_3_5,3_3,265,20170816,1330.0,South,7.2,Right,160,40,15,Branch,,Hybrid,Brown,2.0,,,3.0,3.0,
+3_3_6,3_3,266,20170816,1330.0,South,9.1,Right,140,70,35,Branch,,Branch,Brown,2.0,,,2.0,2.0,2.0
+3_3_7,3_3,267,20170816,1330.0,South,9,Left,45,40,20,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+3_3_8,3_3,268,20170816,1330.0,South,9.4,Right,60,35,20,Branch,,Branch,Orange,2.0,,,2.0,2.0,2.0
+3_3_9,3_3,269,20170816,1330.0,South,10.4,Left,45,40,25,Branch,,Branch,Brown,3.0,Y - yellow,,3.0,2.0,3.0
+3_3_10,3_3,270,20170816,1330.0,East,10.3,Right,15,20,15,Branch,,Branch,Brown,2.0,,,,,
+3_3_11,3_3,271,20170816,1330.0,East,10.2,Left,85,15,15,Hybrid,,Plate,Orange,3.0,,,3.0,,
+3_3_12,3_3,272,20170816,1330.0,East,8.6,Under,,20,15,Hybrid,,Plate,Orange,3.0,,,3.0,,
+3_3_13,3_3,273,20170816,1330.0,East,4.8,Right,120,20,10,Branch,,Branch,Orange,3.0,,,,,
+3_3_14,3_3,274,20170816,1330.0,nope,,,,,,,,,,,,Not enough corals after four transects so decided to end call it,,,
+3_3_15,3_3,275,20170816,1330.0,nope,,,,,,,,,,,,,,,
+3_3_16,3_3,276,20170816,1330.0,nope,,,,,,,,,,,,,,,
+3_3_17,3_3,277,20170816,1330.0,nope,,,,,,,,,,,,,,,
+3_3_18,3_3,278,20170816,1330.0,nope,,,,,,,,,,,,,,,
+3_3_19,3_3,279,20170816,1330.0,nope,,,,,,,,,,,,,,,
+3_3_20,3_3,280,20170816,1330.0,nope,,,,,,,,,,,,,,,
+3_4_1,3_4,281,20170814,1345.0,West,3.4,Right,1.2,30,20,half dead,,Branch,Orange,,,,,2.0,
+3_4_2,3_4,282,20170814,1345.0,West,3.9,Left,10,30,10,half dead,,Branch,Orange,,,,,2.0,
+3_4_3,3_4,283,20170814,1345.0,West,5.8,Under,,60,60,gold; half dead,,Branch,Orange,,,,3.0,3.0,3.0
+3_4_4,3_4,284,20170814,1345.0,West,5.8,Right,100,40,20,half dead,,Branch,Orange,,,,2.0,2.0,1.0
+3_4_5,3_4,285,20170814,1345.0,West,8.4,Right,55,,,half dead,,Branch,Orange,,,,,,3.0
+3_4_6,3_4,286,20170814,1345.0,West,10,Right,40,80,20,,,Branch,Orange,,,,,,2.0
+3_4_7,3_4,287,20170814,1345.0,South,1.2,Left,20,60,50,,,Branch,Orange,,,,,3.0,3.0
+3_4_8,3_4,288,20170814,1345.0,South,2,Left,45,50,20,,,Branch,Orange,,,,,3.0,
+3_4_9,3_4,289,20170814,1345.0,South,1.9,Left,160,70,30,,,Hybrid,Orange,,,,3.0,3.0,
+3_4_10,3_4,290,20170814,1345.0,South,4.3,Left,110,60,10,half dead,,Branch,Orange,,,,1.0,1.5,1.0
+3_4_11,3_4,291,20170814,1345.0,South,5.5,Under,,60,30,half dead,,Branch,Orange,,,,2.0,2.0,3.0
+3_4_12,3_4,292,20170814,1345.0,South,6,Under,,30,20,about 20 cm from 291,,Branch,Orange,,,,3.0,3.0,3.0
+3_4_13,3_4,293,20170814,1345.0,South,8,Under,,80,70,,,Branch,Orange,,,,2.0,2.0,2.0
+3_4_14,3_4,294,20170814,1345.0,South,8.8,Right,65,70,20,,,Branch,Orange,,,,2.0,2.0,2.0
+3_4_15,3_4,295,20170814,1345.0,South,10,Left,25,40,20,,,Branch,Orange,,,,1.0,1.0,1.0
+3_4_16,3_4,296,20170814,1345.0,East,1.6,Under,,60,40,,,Branch,Orange,,,,3.0,2.0,3.0
+3_4_17,3_4,297,20170814,1345.0,East,2.3,Under,,50,25,,,Branch,Orange,,,,3.0,3.0,3.0
+3_4_18,3_4,298,20170814,1345.0,East,2.3,Right,60,60,40,,,Branch,Orange,,,,3.0,3.0,3.0
+3_4_19,3_4,299,20170814,1345.0,East,3.5,Under,,30,20,,,Branch,Orange,,,,2.0,2.0,2.0
+3_4_20,3_4,300,20170814,1345.0,East,4.7,Left,20,50,30,,,Branch,Orange,,,,3.0,3.0,3.0
+3_5_1,3_5,301,20170815,945.0,West,1.5,Left,20,60,40,Branch,,Branch,Brown,2.0,,,2.0,2.0,1.0
+3_5_2,3_5,302,20170815,945.0,West,2.3,Right,50,35,30,Branch,,Hybrid,Orange,3.0,,,3.0,3.0,3.0
+3_5_3,3_5,303,20170815,945.0,West,3.1,Left,140,70,40,Branch,,Branch,Orange,2.0,,,,2.0,
+3_5_4,3_5,304,20170815,945.0,West,6,Right,130,15,15,Branch,half dead,Branch,Orange,3.0,,,3.0,2.0,3.0
+3_5_5,3_5,305,20170815,945.0,nope,No bag,No bag,No bag,No bag,No bag,No bag,,,,,,No sample bag so skipped this one,,,
+3_5_6,3_5,306,20170815,945.0,West,6.6,Left,155,35,15,Branch,,Branch,Orange,3.0,,,,,
+3_5_7,3_5,307,20170815,945.0,West,7.8,Right,35,30,15,Branch,,Branch,Orange,1.0,,,2.0,3.0,3.0
+3_5_8,3_5,308,20170815,945.0,South,1,Under,,55,25,Branch,,Branch,Orange,2.0,,,2.0,2.0,3.0
+3_5_9,3_5,309,20170815,945.0,South,1.6,Right,20,55,20,Branch,south transect is along reef edge,Hybrid,Brown,2.0,,,3.0,2.0,
+3_5_10,3_5,310,20170815,945.0,South,1.9,Left,65,70,40,Branch,on reef edge,Hybrid,Brown,1.0,,,1.0,1.5,
+3_5_11,3_5,311,20170815,945.0,South,2.6,Right,135,60,10,Branch,half dead,Branch,Orange,1.0,,,1.0,1.0,
+3_5_12,3_5,312,20170815,945.0,South,3.2,Left,55,65,35,Hybrid,,Hybrid,Orange,2.0,,,2.0,2.0,2.0
+3_5_13,3_5,313,20170815,945.0,South,4.1,Left,50,20,20,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+3_5_14,3_5,314,20170815,945.0,South,4.4,Right,25,15,15,Branch,,Branch,Brown,2.0,,,2.0,,2.0
+3_5_15,3_5,315,20170815,945.0,South,4.7,Left,45,50,40,Branch,,Branch,Brown,3.0,,,3.0,3.0,3.0
+3_5_16,3_5,316,20170815,945.0,South,5.4,Right,30,35,10,Branch,,Branch,Orange,3.0,,,2.0,,2.0
+3_5_17,3_5,317,20170815,945.0,South,6.3,Left,80,30,20,Branch,,Branch,Brown,2.0,,,2.0,2.0,2.0
+3_5_18,3_5,318,20170815,945.0,South,7.3,Right,140,55,10,Branch,,Branch,Orange,3.0,,,3.0,,3.0
+3_5_19,3_5,319,20170815,945.0,South,8.6,Left,90,20,20,Hybrid,on reef edge,Hybrid,Orange,3.0,,,3.0,,
+3_5_20,3_5,320,20170815,945.0,South,9,Right,25,20,15,Branch,,Branch,Brown,3.0,,,3.0,,2.0
+3_6_1,3_6,321,20170816,1430.0,West,0.9,Right,10,20,15,Branch,,Branch,Brown,2.0,,,2.0,2.0,2.0
+3_6_2,3_6,322,20170816,1430.0,West,1.3,Right,90,10,10,Branch,,Branch,Orange,2.0,,,3.0,3.0,
+3_6_3,3_6,323,20170816,1430.0,West,1.8,Left,10,20,10,Branch,,Branch,Orange,2.0,,,3.0,3.0,
+3_6_4,3_6,324,20170816,1430.0,West,2.7,Left,30,20,10,Branch,,Branch,Orange,3.0,,,,3.0,3.0
+3_6_5,3_6,325,20170816,1430.0,West,3.3,Right,110,15,10,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+3_6_6,3_6,326,20170816,1430.0,West,3.5,Right,30,10,10,Branch,,Branch,Orange,3.0,,,3.0,3.0,2.0
+3_6_7,3_6,327,20170816,1430.0,West,3.5,Left,60,15,10,Branch,,Branch,Orange,2.0,,,3.0,3.0,3.0
+3_6_8,3_6,328,20170816,1430.0,West,4.1,Right,40,20,10,Hybrid,,Branch,Orange,3.0,,,3.0,,3.0
+3_6_9,3_6,329,20170816,1430.0,West,5.6,Left,20,15,10,Branch,,Branch,Orange,2.0,,,2.0,,2.0
+3_6_10,3_6,330,20170816,1430.0,West,5.8,Right,20,25,10,Branch,,Branch,Orange,3.0,,,3.0,,3.0
+3_6_11,3_6,331,20170816,1430.0,West,7,Left,70,15,10,Branch,,Branch,Orange,2.0,,,,2.0,3.0
+3_6_12,3_6,332,20170816,1430.0,West,7.8,Right,60,25,10,Branch,,Branch,Orange,2.0,,,,3.0,3.0
+3_6_13,3_6,333,20170816,1430.0,West,9,Left,100,100,25,Hybrid,,Hybrid,Orange,3.0,,,,2.0,3.0
+3_6_14,3_6,334,20170816,1430.0,West,9.2,Right,15,15,10,Branch,,Branch,Orange,2.0,,,,3.0,3.0
+3_6_15,3_6,335,20170816,1430.0,South,0.9,Under,,20,10,Branch,,Branch,Brown,1.0,,,2.0,2.0,2.0
+3_6_16,3_6,336,20170816,1430.0,South,1.9,Left,100,15,10,Branch,,Branch,Brown,3.0,,,3.0,3.0,
+3_6_17,3_6,337,20170816,1430.0,South,3.2,Left,130,40,15,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+3_6_18,3_6,338,20170816,1430.0,South,3.7,Right,125,35,40,Branch,,Branch,Brown,2.0,,,,2.0,1.0
+3_6_19,3_6,339,20170816,1430.0,South,4.6,Right,25,25,20,Branch,,Branch,Orange,2.0,,,,,2.0
+3_6_20,3_6,340,20170816,1430.0,South,5.3,Under,,25,15,Branch,,Branch,Brown,3.0,,,,,
+3_7_1,3_7,341,20170815,1100.0,East,4.6,Left,70,40,15,Branch,,Branch,Brown,2.0,,,2.0,2.0,
+3_7_2,3_7,342,20170815,1100.0,East,4,Right,100,10,10,Branch,,Branch,Orange,2.0,,,3.0,3.0,
+3_7_3,3_7,343,20170815,1100.0,East,5,Right,20,15,15,Branch,,Branch,Orange,2.0,,,,3.0,3.0
+3_7_4,3_7,344,20170815,1100.0,East,5.8,Left,50,15,5,Branch,,Branch,Orange,2.0,,,,3.0,3.0
+3_7_5,3_7,345,20170815,1100.0,East,7.1,Left,135,15,15,Branch,,Branch,Orange,2.0,,,3.0,3.0,
+3_7_6,3_7,346,20170815,1100.0,East,7.5,Under,,10,10,Branch,,Branch,Orange,2.0,,,2.0,3.0,3.0
+3_7_7,3_7,347,20170815,1100.0,East,7.7,Right,60,15,10,Branch,,Branch,Orange,2.0,,,2.0,2.0,2.0
+3_7_8,3_7,348,20170815,1100.0,East,8.3,Right,35,15,10,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+3_7_9,3_7,349,20170815,1100.0,East,8.5,Left,30,15,10,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+3_7_10,3_7,350,20170815,1100.0,East,9.1,Right,35,20,15,Branch,,Branch,Orange,2.0,,,,3.0,3.0
+3_7_11,3_7,351,20170815,1100.0,East,9.8,Right,30,30,25,Branch,,Branch,Orange,2.0,,,,3.0,3.0
+3_7_12,3_7,352,20170815,1100.0,East,10.4,Left,35,30,25,Branch,,Branch,Orange,2.0,,,,3.0,
+3_7_13,3_7,353,20170815,1100.0,North,0.7,Left,20,15,15,Plate,,Plate,Orange,3.0,,,,,
+3_7_14,3_7,354,20170815,1100.0,North,1,Right,70,30,30,Hybrid,half dead,Hybrid,Orange,3.0,,,,,
+3_7_15,3_7,355,20170815,1100.0,North,2.3,Right,100,30,15,Branch,,Branch,Orange,3.0,,,3.0,,3.0
+3_7_16,3_7,356,20170815,1100.0,North,4.8,Right,50,35,25,Branch,,Branch,Orange,3.0,,,3.0,,3.0
+3_7_17,3_7,357,20170815,1100.0,North,6.6,Right,35,30,25,Hybrid,,Branch,Brown,2.0,,,2.0,,2.0
+3_7_18,3_7,358,20170815,1100.0,North,9,Right,150,25,15,Branch,,Branch,Orange,3.0,,,,,3.0
+3_7_19,3_7,359,20170815,1100.0,North,9.9,Under,,60,30,Branch,half dead,Branch,Orange,3.0,,,,,
+3_7_20,3_7,360,20170815,1100.0,North,9.9,Left,50,15,15,Branch,,Branch,Orange,3.0,,,,,
+4_4_1,4_4,361,20170816,1200.0,West,0.6,Left,55,40,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+4_4_2,4_4,362,20170816,1200.0,West,1.3,Right,55,30,20,Branch,,Branch,Orange,2.0,,,,3.0,3.0
+4_4_3,4_4,363,20170816,1200.0,West,1.8,Under,,20,20,Branch,,Branch,Orange,2.0,,,,3.0,3.0
+4_4_4,4_4,364,20170816,1200.0,West,1.6,Left,110,40,35,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+4_4_5,4_4,365,20170816,1200.0,West,2.3,Left,70,85,30,Branch,,Branch,Brown,2.0,,,,,
+4_4_6,4_4,366,20170816,1200.0,West,3.2,Right,110,>100,>100,Branch,patchy spread out,Branch,Orange,3.0,,,3.0,,3.0
+4_4_7,4_4,367,20170816,1200.0,West,5.8,Under,,40,10,Branch,,Branch,Orange,3.0,,,3.0,,
+4_4_8,4_4,368,20170816,1200.0,West,5.8,Right,70,70,40,Branch,,Branch,Orange,3.0,,,3.0,,
+4_4_9,4_4,369,20170816,1200.0,West,6.6,Left,85,30,15,Branch,,Branch,Orange,2.0,,,2.0,,
+4_4_10,4_4,370,20170816,1200.0,West,8.3,Right,70,65,50,Branch,,Branch,Orange,3.0,,,,,
+4_4_11,4_4,371,20170816,1200.0,West,9.4,Under,,>100,>100,Branch,patchy half dead,Branch,Orange,2.0,,,,,
+4_4_12,4_4,372,20170816,1200.0,South,2,Under,,>100,>100,Branch,,Branch,Orange,3.0,,,,,2.0
+4_4_13,4_4,373,20170816,1200.0,South,2.8,Right,150,60,35,Branch,,Branch,Brown,2.0,,,2.0,,
+4_4_14,4_4,374,20170816,1200.0,South,4.3,Under,,45,15,Branch,,Branch,Orange,3.0,,,,3.0,
+4_4_15,4_4,375,20170816,1200.0,South,5.4,Left,30,50,40,Branch,,Hybrid,Brown,2.0,,,,2.0,
+4_4_16,4_4,376,20170816,1200.0,South,5.8,Under,,55,55,Branch,,Branch,Orange,3.0,,,,3.0,
+4_4_17,4_4,377,20170816,1200.0,South,6.6,Left,60,50,45,Branch,,Branch,Orange,3.0,,,,3.0,
+4_4_18,4_4,378,20170816,1200.0,South,7,Right,50,40,40,Branch,,Branch,Orange,2.0,,,,2.0,
+4_4_19,4_4,379,20170816,1200.0,South,8.5,Under,,>100,>100,Branch,,Branch,Orange,2.0,,,,2.0,
+4_4_20,4_4,380,20170816,1200.0,South,9.6,Under,,45,30,Branch,,Branch,Orange,2.0,,,,,
+4_5_1,4_5,381,20170821,1400.0,West,1.1,Left,115,15,15,Branch,today bad paper so potential for mistakes,Branch,Orange,3.0,,,3.0,,
+4_5_2,4_5,382,20170821,1400.0,West,1.7,Right,120,15,10,Branch,,Branch,Orange,2.0,,,2.0,2.0,3.0
+4_5_3,4_5,383,20170821,1400.0,West,2,Right,25,30,15,Branch,,Branch,Orange,2.0,,,2.0,2.0,3.0
+4_5_4,4_5,384,20170821,1400.0,West,2.5,Left,130,20,20,Branch,,Branch,Orange,2.0,,,3.0,2.0,
+4_5_5,4_5,385,20170821,1400.0,West,3.5,Left,200,15,10,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+4_5_6,4_5,386,20170821,1400.0,West,7,Right,45,70,30,Branch,,Branch,Orange,2.0,,,2.0,2.0,2.0
+4_5_7,4_5,387,20170821,1400.0,West,7.7,Right,25,60,50,Branch,,Branch,Orange,2.0,,,2.0,3.0,3.0
+4_5_8,4_5,388,20170821,1400.0,West,8.8,Under,,75,45,Branch,,Branch,Brown,2.0,,,2.0,2.0,2.0
+4_5_9,4_5,389,20170821,1400.0,West,8.8,Left,80,45,45,Branch,,Branch,Orange,1.0,,,2.0,1.0,1.0
+4_5_10,4_5,390,20170821,1400.0,West,9.2,Left,160,70,35,Branch,,Branch,Orange,2.0,Y - yellow,,2.0,2.0,2.0
+4_5_11,4_5,391,20170821,1400.0,West,9.5,Under,,45,20,Branch,,Branch,Orange,2.0,,,,3.0,3.0
+4_5_12,4_5,392,20170821,1400.0,West,9.5,Right,115,95,50,Branch,,Branch,Orange,2.0,,,2.0,3.0,
+4_5_13,4_5,393,20170821,1400.0,South,1.4,Under,,25,15,Branch,,Branch,Orange,3.0,,,2.0,,3.0
+4_5_14,4_5,394,20170821,1400.0,South,1.7,Right,20,20,15,Branch,,Branch,Orange,3.0,,,3.0,,3.0
+4_5_15,4_5,395,20170821,1400.0,South,4.5,Right,125,15,15,Branch,,Branch,Orange,2.0,,,2.0,,
+4_5_16,4_5,396,20170821,1400.0,South,5.3,Right,200,30,30,Branch,,Hybrid,Orange,2.0,,,2.0,,
+4_5_17,4_5,397,20170821,1400.0,South,8,Right,70,30,20,Branch,,Branch,Orange,2.0,,,,,3.0
+4_5_18,4_5,398,20170821,1400.0,South,7.7,Right,200,30,25,Branch,,Branch,Orange,2.0,,,,,1.0
+4_5_19,4_5,399,20170821,1400.0,South,9.2,Left,200,55,20,Branch,,Branch,Orange,2.0,,,,,
+4_5_20,4_5,400,20170821,1400.0,East,5,Right,175,20,10,Branch,on slope,Branch,Orange,3.0,,,,3.0,
+4_6_1,4_6,401,20170822,1130.0,West,1.4,Right,45,60,60,Branch,half dead,Branch,Orange,3.0,,Lots of turf algae at this site (invasive too),,,
+4_6_2,4_6,402,20170822,1130.0,West,2.7,Left,70,30,20,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,
+4_6_3,4_6,403,20170822,1130.0,West,3.2,Left,125,70,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+4_6_4,4_6,404,20170822,1130.0,West,3.7,Left,65,70,30,Branch,,Branch,Orange,3.0,,,2.0,3.0,
+4_6_5,4_6,405,20170822,1130.0,West,3.9,Right,110,35,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,2.0
+4_6_6,4_6,406,20170822,1130.0,West,4.8,Left,85,50,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+4_6_7,4_6,407,20170822,1130.0,West,4.9,Right,110,35,25,Branch,,Branch,Orange,3.0,,,,3.0,
+4_6_8,4_6,408,20170822,1130.0,West,5.7,Left,60,55,25,Hybrid,,Hybrid,Orange,2.0,,,3.0,,
+4_6_9,4_6,409,20170822,1130.0,West,7.4,Left,160,90,20,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,3.0
+4_6_10,4_6,410,20170822,1130.0,West,7.7,Left,25,30,15,Branch,,Branch,Brown,2.0,,,2.0,2.0,
+4_6_11,4_6,411,20170822,1130.0,West,8.7,Under,,25,15,Branch,,Branch,Orange,2.0,,,3.0,3.0,2.0
+4_6_12,4_6,412,20170822,1130.0,West,9.4,Under,,30,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,2.0
+4_6_13,4_6,413,20170822,1130.0,West,10.2,Left,80,70,50,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+4_6_14,4_6,414,20170822,1130.0,South,0.7,Left,25,30,20,Branch,,Hybrid,Orange,2.0,,,,,3.0
+4_6_15,4_6,415,20170822,1130.0,South,2.9,Under,,20,15,Branch,,Branch,Orange,3.0,,,,,2.0
+4_6_16,4_6,416,20170822,1130.0,South,4.1,Left,90,75,60,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,3.0
+4_6_17,4_6,417,20170822,1130.0,South,4.5,Left,10,25,20,Branch,,Branch,Orange,3.0,,,,,
+4_6_18,4_6,418,20170822,1130.0,South,3.4,Right,200,>100,>100,Branch,,Branch,Orange,3.0,,,3.0,3.0,2.0
+4_6_19,4_6,419,20170822,1130.0,South,6,Right,50,60,30,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+4_6_20,4_6,420,20170822,1130.0,South,6.7,Right,20,45,45,Branch,,Branch,Orange,3.0,,,3.0,2.0,
+4_8_1,4_8,421,20170815,1200.0,West,2.2,Right,60,150,30,Branch,,Branch,Orange,2.0,,,3.0,2.0,3.0
+4_8_2,4_8,422,20170815,1200.0,West,3.5,Under,,70,50,Branch,,Branch,Orange,3.0,,,3.0,,
+4_8_3,4_8,423,20170815,1200.0,West,4.2,Right,45,90,80,Branch,,Hybrid,Orange,3.0,,,3.0,3.0,
+4_8_4,4_8,424,20170815,1200.0,West,4.6,Left,5,60,35,Branch,,Hybrid,Orange,2.0,,,,2.0,
+4_8_5,4_8,425,20170815,1200.0,West,5.4,Under,,50,40,Branch,,Branch,Orange,3.0,,,,,
+4_8_6,4_8,426,20170815,1200.0,West,6.3,Left,75,60,40,Branch,,Branch,Orange,3.0,,,,3.0,
+4_8_7,4_8,427,20170815,1200.0,West,6.9,Right,100,80,45,Branch,,Branch,Orange,3.0,,,3.0,,
+4_8_8,4_8,428,20170815,1200.0,West,7.4,Right,50,20,20,Branch,,Branch,Orange,2.0,,,3.0,2.0,
+4_8_9,4_8,429,20170815,1200.0,West,8.7,Left,200,70,50,Branch,,Branch,Orange,3.0,,,,3.0,
+4_8_10,4_8,430,20170815,1200.0,West,8.9,Under,,55,40,Branch,,Branch,Brown,2.0,,,,2.0,
+4_8_11,4_8,431,20170815,1200.0,West,9.7,Right,35,30,30,Branch,,Branch,Brown,2.0,,,,2.0,
+4_8_12,4_8,432,20170815,1200.0,South,1.3,Right,115,25,20,Branch,,Branch,Brown,2.0,,,,,
+4_8_13,4_8,433,20170815,1200.0,South,3.5,Left,110,20,20,Branch,,Branch,Orange,2.0,,,,,
+4_8_14,4_8,434,20170815,1200.0,South,3.6,Left,5,30,20,Branch,,Branch,Orange,3.0,,,,,3.0
+4_8_15,4_8,435,20170815,1200.0,South,5,Under,,100,60,Branch,,Branch,Orange,2.0,,,,3.0,3.0
+4_8_16,4_8,436,20170815,1200.0,South,6.5,Right,20,60,55,Branch,,Branch,Orange,3.0,,,,2.0,2.0
+4_8_17,4_8,437,20170815,1200.0,South,7.2,Right,70,20,15,Branch,,Hybrid,Orange,2.0,,,,,2.0
+4_8_18,4_8,438,20170815,1200.0,South,9.6,Right,35,30,20,Branch,,Hybrid,Brown,2.0,,,,,2.0
+4_8_19,4_8,439,20170815,1200.0,East,2.5,Under,,90,60,Branch,,Hybrid,Brown,2.0,,,2.0,2.0,2.0
+4_8_20,4_8,440,20170815,1200.0,East,4,Left,5,70,45,Branch,,Branch,Orange,2.0,,,,,3.0
+4_11_1,4_11,441,20170822,1400.0,West,1.2,Under,,45,40,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+4_11_2,4_11,442,20170822,1400.0,West,2.2,Right,130,>100,>100,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+4_11_3,4_11,443,20170822,1400.0,West,3,Under,,>100,>100,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,3.0
+4_11_4,4_11,444,20170822,1400.0,West,5,Under,,>100,>100,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,3.0
+4_11_5,4_11,445,20170822,1400.0,West,6.9,Right,80,>100,>100,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+4_11_6,4_11,446,20170822,1400.0,West,7.3,Under,,>100,>100,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,3.0
+4_11_7,4_11,447,20170822,1400.0,West,8.9,Left,50,70,40,Hybrid,,Hybrid,Orange,3.0,,,,,
+4_11_8,4_11,448,20170822,1400.0,West,10,Right,35,>100,>100,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+4_11_9,4_11,449,20170822,1400.0,South,0.9,Left,80,100,60,Branch,,Branch,Orange,2.0,,,,2.0,3.0
+4_11_10,4_11,450,20170822,1400.0,South,1.5,Right,90,>100,>100,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+4_11_11,4_11,451,20170822,1400.0,South,2.5,Under,,>100,>100,Hybrid,,Branch,Orange,3.0,,,,3.0,
+4_11_12,4_11,452,20170822,1400.0,South,4.2,Under,,90,40,Hybrid,,Branch,Orange,3.0,,,,3.0,
+4_11_13,4_11,453,20170822,1400.0,South,4.3,Left,35,35,30,Branch,,Branch,Orange,3.0,,,,3.0,
+4_11_14,4_11,454,20170822,1400.0,South,7,Right,180,60,50,Branch,,Branch,Orange,3.0,,,,3.0,
+4_11_15,4_11,455,20170822,1400.0,South,8.4,Right,75,75,70,Branch,,Branch,Orange,2.0,,,,2.0,
+4_11_16,4_11,456,20170822,1400.0,South,8.9,Right,20,30,20,Branch,,Branch,Orange,2.0,,,,3.0,
+4_11_17,4_11,457,20170822,1400.0,South,10.5,Left,55,>100,>100,Branch,,Branch,Orange,3.0,,,,3.0,
+4_11_18,4_11,458,20170822,1400.0,East,1.5,Under,,>100,>100,Hybrid,,Hybrid,Brown,2.0,,,3.0,3.0,3.0
+4_11_19,4_11,459,20170822,1400.0,East,2.6,Left,70,80,50,Branch,,Branch,Brown,3.0,,,3.0,3.0,3.0
+4_11_20,4_11,460,20170822,1400.0,East,3.9,Left,25,60,40,Branch,,Branch,Orange,3.0,,,,3.0,3.0
+4_14_1,4_14,461,20170822,1245.0,West,1.1,Under,,25,25,Hybrid,,Hybrid,Orange,3.0,,,2.0,2.0,
+4_14_2,4_14,462,20170822,1245.0,West,1.7,Under,,30,30,Hybrid,,Hybrid,Orange,2.0,,Small portion fully bleached,3.0,2.0,
+4_14_3,4_14,463,20170822,1245.0,West,2.6,Right,95,25,20,Branch,,Branch,Orange,3.0,,,3.0,3.0,2.0
+4_14_4,4_14,464,20170822,1245.0,West,2.2,Left,20,30,25,Hybrid,,Hybrid,Orange,3.0,,,3.0,2.0,3.0
+4_14_5,4_14,465,20170822,1245.0,West,6.2,Left,25,20,20,Branch,,Branch,Orange,3.0,,,,2.0,2.0
+4_14_6,4_14,466,20170822,1245.0,West,6.1,Right,25,20,15,Branch,,Branch,Orange,3.0,,,,,
+4_14_7,4_14,467,20170822,1245.0,West,6.9,Right,15,20,15,Branch,,Branch,Orange,2.0,,,,2.0,2.0
+4_14_8,4_14,468,20170822,1245.0,West,7.6,Right,75,50,35,Branch,,Hybrid,Orange,2.0,,,,2.0,
+4_14_9,4_14,469,20170822,1245.0,West,8,Under,,50,45,Branch,,Branch,Orange,3.0,,,,3.0,2.0
+4_14_10,4_14,470,20170822,1245.0,South,1.5,Right,100,40,35,Branch,,Branch,Brown,3.0,,,3.0,3.0,3.0
+4_14_11,4_14,471,20170822,1245.0,South,2.2,Right,55,60,10,Branch,,Hybrid,Orange,3.0,,,3.0,2.0,2.0
+4_14_12,4_14,472,20170822,1245.0,South,3.2,Left,65,>100,>100,Branch,,Branch,Orange,3.0,,,2.0,2.0,2.0
+4_14_13,4_14,473,20170822,1245.0,South,9.9,Left,115,90,50,Branch,,Branch,Orange,2.0,,,,,
+4_14_14,4_14,474,20170822,1245.0,South,9.7,Right,100,>100,>100,Branch,,Branch,Orange,2.0,,,3.0,2.0,3.0
+4_14_15,4_14,475,20170822,1245.0,East,1,Left,140,95,90,Branch,,Branch,Orange,3.0,,,,3.0,3.0
+4_14_16,4_14,476,20170822,1245.0,East,2.4,Left,45,60,30,Branch,,Branch,Orange,2.0,,,,,2.0
+4_14_17,4_14,477,20170822,1245.0,East,4.4,Right,20,40,30,Branch,,Hybrid,Orange,3.0,,,,,
+4_14_18,4_14,478,20170822,1245.0,East,6,Right,65,40,30,Branch,,Branch,Orange,2.0,,,,2.0,2.0
+4_14_19,4_14,479,20170822,1245.0,East,7.2,Right,20,75,60,Branch,,Hybrid,Orange,2.0,,,,2.0,2.0
+4_14_20,4_14,480,20170822,1245.0,East,8.6,Under,,60,40,Branch,,Hybrid,Orange,2.0,Y - yellow,,,2.0,
+5_1_1,5_1,481,20170822,1530.0,West,9.3,Left,30,40,35,Branch,,Branch,Brown,2.0,Y - blue,,,,
+5_1_2,5_1,482,20170822,1530.0,West,9.7,Left,20,35,10,Branch,,Hybrid,Brown,2.0,,,,2.0,
+5_1_3,5_1,483,20170822,1530.0,West,10.4,Right,100,35,25,Branch,,Branch,Orange,3.0,,,,,
+5_1_4,5_1,484,20170822,1530.0,West,10.3,Left,100,30,20,Branch,,Branch,Brown,3.0,,,,,
+5_1_5,5_1,485,20170822,1530.0,South,1.9,Right,30,100,90,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+5_1_6,5_1,486,20170822,1530.0,South,2.4,Under,,65,60,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+5_1_7,5_1,487,20170822,1530.0,South,3.5,Left,20,45,45,Branch,,Branch,Orange,2.0,,,,,3.0
+5_1_8,5_1,488,20170822,1530.0,South,4.4,Right,35,100,50,Branch,,Branch,Orange,3.0,,,3.0,,3.0
+5_1_9,5_1,489,20170822,1530.0,South,5.9,Under,,65,60,Branch,,Branch,Orange,1.0,,,,,2.0
+5_1_10,5_1,490,20170822,1530.0,South,5.9,Left,60,85,80,Branch,,Hybrid,Brown,2.0,,,,,
+5_1_11,5_1,491,20170822,1530.0,South,7.6,Under,,>100,>100,Branch,,Branch,Orange,3.0,,,,,
+5_1_12,5_1,492,20170822,1530.0,South,7.8,Right,100,40,25,Branch,,Branch,Orange,3.0,,,,,
+5_1_13,5_1,493,20170822,1530.0,South,8.6,Right,160,50,45,Branch,half dead,Branch,Orange,2.0,Y - blue,,,,
+5_1_14,5_1,494,20170822,1530.0,East,1.2,Right,45,50,35,Branch,,Branch,Orange,3.0,,,,3.0,3.0
+5_1_15,5_1,495,20170822,1530.0,East,1.5,Under,,100,80,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+5_1_16,5_1,496,20170822,1530.0,East,2,Right,35,85,60,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+5_1_17,5_1,497,20170822,1530.0,East,2.4,Left,10,80,60,Branch,,Branch,Brown,3.0,,,3.0,3.0,3.0
+5_1_18,5_1,498,20170822,1530.0,East,3.3,Right,25,>100,>100,Branch,,Branch,Orange,3.0,,,3.0,3.0,3.0
+5_1_19,5_1,499,20170822,1530.0,East,3.3,Under,,40,35,Branch,,Branch,Brown,3.0,,,3.0,,
+5_1_20,5_1,500,20170822,1530.0,East,4.1,Left,160,40,25,Branch,,Branch,Orange,3.0,,,,,
+5_2_1,5_2,501,20170829,1330.0,West,0.8,Under,,70,50,Branch,couldn't find hobo; put new hobo #33; took new GPS point 5--2,Hybrid,Brown,3.0,Had to put out new Hobo (33) but still used original coordinates,,3.0,3.0,
+5_2_2,5_2,502,20170829,1330.0,West,1,Left,40,20,20,Branch,,Branch,Orange,2.0,,,2.0,3.0,2.0
+5_2_3,5_2,503,20170829,1330.0,West,1.2,Left,40,25,20,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,3.0
+5_2_4,5_2,504,20170829,1330.0,West,1.7,Left,70,30,30,Branch,,Branch,Brown,3.0,,,2.0,3.0,3.0
+5_2_5,5_2,505,20170829,1330.0,West,1.5,Under,,60,30,Branch,,Branch,Orange,3.0,,,3.0,,
+5_2_6,5_2,506,20170829,1330.0,West,1.6,Right,25,45,30,Hybrid,,Branch,Orange,2.0,,,3.0,3.0,
+5_2_7,5_2,507,20170829,1330.0,West,2,Right,50,30,20,Branch,,Branch,Orange,2.0,,,3.0,3.0,
+5_2_8,5_2,508,20170829,1330.0,West,2.2,Right,10,20,15,Branch,,Hybrid,Orange,3.0,,,2.0,2.0,2.0
+5_2_9,5_2,509,20170829,1330.0,West,2,Under,,30,20,Branch,,Branch,Brown,2.0,,,3.0,,
+5_2_10,5_2,510,20170829,1330.0,West,2.7,Left,80,55,35,Branch,,Hybrid,Brown,2.0,,,3.0,3.0,2.0
+5_2_11,5_2,511,20170829,1330.0,West,2.8,Under,,35,15,Branch,,Branch,Orange,3.0,,,3.0,,
+5_2_12,5_2,512,20170829,1330.0,West,2.8,Right,20,25,20,Branch,,Branch,Orange,3.0,,,2.0,,
+5_2_13,5_2,513,20170829,1330.0,West,4.1,Left,80,30,25,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,2.0
+5_2_14,5_2,514,20170829,1330.0,West,4.2,Left,100,50,50,Hybrid,,Branch,Orange,3.0,,,3.0,3.0,2.0
+5_2_15,5_2,515,20170829,1330.0,West,4.4,Right,20,50,35,Hybrid,,Branch,Brown,3.0,,,3.0,3.0,3.0
+5_2_16,5_2,516,20170829,1330.0,West,5,Right,20,70,65,Hybrid,,Hybrid,Orange,3.0,,,3.0,3.0,2.0
+5_2_17,5_2,517,20170829,1330.0,West,5.6,Under,,70,60,Plate,,Plate,Orange,3.0,,,3.0,3.0,
+5_2_18,5_2,518,20170829,1330.0,West,6,Left,45,25,25,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+5_2_19,5_2,519,20170829,1330.0,West,7.9,Right,110,25,20,Hybrid,,Branch,Orange,3.0,,,1.0,3.0,2.0
+5_2_20,5_2,520,20170829,1330.0,West,8.8,Under,,50,30,Plate,,Hybrid,Orange,2.0,,,,2.0,2.0
+5_3_1,5_3,521,20170829,1030.0,West,0.3,Right,105,50,30,Branch,,Branch,Brown,2.0,Y - yellow,,2.0,,
+5_3_2,5_3,522,20170829,1030.0,West,0.7,Left,200,30,20,Branch,,Branch,Orange,2.0,Y - yellow,,,2.0,
+5_3_3,5_3,523,20170829,1030.0,West,1.4,Left,160,45,25,Branch,,Branch,Orange,2.0,,,,,
+5_3_4,5_3,524,20170829,1030.0,West,2,Left,185,40,35,Branch,,Branch,Orange,2.0,,,2.0,2.0,
+5_3_5,5_3,525,20170829,1030.0,West,3.3,Left,80,30,30,Branch,,Branch,Orange,3.0,,,2.0,3.0,
+5_3_6,5_3,526,20170829,1030.0,West,2.5,Right,30,15,15,Branch,,Branch,Orange,2.0,,,3.0,,
+5_3_7,5_3,527,20170829,1030.0,West,3.4,Right,10,20,20,Branch,,Branch,Orange,2.0,,,2.0,3.0,
+5_3_8,5_3,528,20170829,1030.0,West,3.9,Left,10,20,10,Branch,,Branch,Orange,2.0,,,2.0,2.0,
+5_3_9,5_3,529,20170829,1030.0,West,4.1,Left,40,35,25,Branch,,Branch,Orange,3.0,Y - yellow,,3.0,,
+5_3_10,5_3,530,20170829,1030.0,West,4.7,Under,,35,10,Branch,,Branch,Orange,2.0,,,2.0,2.0,
+5_3_11,5_3,531,20170829,1030.0,West,4.5,Right,80,35,15,Branch,,Branch,Orange,3.0,Y - yellow,,3.0,3.0,
+5_3_12,5_3,532,20170829,1030.0,West,5.8,Right,100,25,15,Branch,,Branch,Orange,3.0,Y - yellow,,3.0,,
+5_3_13,5_3,533,20170829,1030.0,West,6.1,Right,10,15,10,Branch,,Branch,Orange,2.0,,,3.0,3.0,
+5_3_14,5_3,534,20170829,1030.0,West,6.4,Left,15,30,30,Branch,,Branch,Orange,3.0,Y - yellow,,3.0,3.0,
+5_3_15,5_3,535,20170829,1030.0,West,6.8,Under,,20,15,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+5_3_16,5_3,536,20170829,1030.0,West,7.5,Under,,40,35,Branch,,Branch,Orange,2.0,Y - yellow,,,,
+5_3_17,5_3,537,20170829,1030.0,West,8,Under,,50,45,Branch,,Branch,Orange,3.0,Y - yellow,,3.0,,2.0
+5_3_18,5_3,538,20170829,1030.0,West,8.5,Left,10,40,20,Branch,,Branch,Orange,2.0,Y - yellow,,2.0,,2.0
+5_3_19,5_3,539,20170829,1030.0,West,9,Under,,75,50,Branch,,Branch,Orange,3.0,,,3.0,,3.0
+5_3_20,5_3,540,20170829,1030.0,West,9.7,Right,100,80,70,Branch,,Hybrid,Orange,3.0,,,2.0,,3.0
+5_6_1,5_6,541,20170829,1145.0,West,0.5,Left,30,25,10,Branch,,Branch,Orange,3.0,,,,,
+5_6_2,5_6,542,20170829,1145.0,West,0.9,Left,50,25,10,Branch,,Branch,Brown,3.0,Y - yellow,,3.0,,
+5_6_3,5_6,543,20170829,1145.0,West,1.2,Right,150,25,20,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+5_6_4,5_6,544,20170829,1145.0,West,1.4,Right,100,30,20,Hybrid,,Hybrid,Orange,3.0,Y - blue,,3.0,3.0,
+5_6_5,5_6,545,20170829,1145.0,West,2,Right,30,50,40,Branch,,Branch,Brown,3.0,Y - yellow,,3.0,3.0,3.0
+5_6_6,5_6,546,20170829,1145.0,West,1.9,Right,30,35,30,Branch,,Branch,Orange,3.0,,,,3.0,
+5_6_7,5_6,547,20170829,1145.0,West,2.7,Left,30,40,40,Branch,,Branch,Orange,3.0,,,,3.0,
+5_6_8,5_6,548,20170829,1145.0,West,3.1,Right,10,40,35,Branch,,Branch,Orange,3.0,Y - blue,,3.0,3.0,3.0
+5_6_9,5_6,549,20170829,1145.0,West,3.4,Under,,35,30,Hybrid,,Hybrid,Orange,3.0,Y - blue,,3.0,3.0,
+5_6_10,5_6,550,20170829,1145.0,West,4.1,Left,70,50,40,Branch,,Branch,Orange,3.0,,,3.0,,
+5_6_11,5_6,551,20170829,1145.0,West,3.9,Right,10,50,30,Branch,,Branch,Brown,3.0,,,3.0,3.0,
+5_6_12,5_6,552,20170829,1145.0,West,4.8,Right,120,50,30,Branch,,Branch,Orange,3.0,,,,3.0,
+5_6_13,5_6,553,20170829,1145.0,West,5,Right,50,40,30,Branch,,Branch,Brown,3.0,,,,3.0,
+5_6_14,5_6,554,20170829,1145.0,West,5.9,Under,,40,25,Branch,,Branch,Orange,3.0,,,,3.0,
+5_6_15,5_6,555,20170829,1145.0,West,7,Right,90,60,30,Branch,,Branch,Orange,3.0,,,,3.0,
+5_6_16,5_6,556,20170829,1145.0,West,7,Under,,90,70,Branch,,Branch,Orange,2.0,,,,3.0,
+5_6_17,5_6,557,20170829,1145.0,West,9,Right,50,45,35,Branch,,Branch,Orange,3.0,,,,3.0,3.0
+5_6_18,5_6,558,20170829,1145.0,West,9.7,Left,20,50,30,Branch,,Branch,Orange,3.0,,,,3.0,3.0
+5_6_19,5_6,559,20170829,1145.0,West,10.3,Left,10,50,35,Branch,,Branch,Orange,3.0,,,,,3.0
+5_6_20,5_6,560,20170829,1145.0,West,11,Right,10,40,30,Branch,,Branch,Orange,2.0,,,,3.0,
+5_7_1,5_7,561,20170829,,West,0,Left,90,40,35,Branch,,Branch,Orange,2.0,,,3.0,,
+5_7_2,5_7,562,20170829,,West,0.4,Left,125,20,20,Hybrid,,Branch,Orange,2.0,,,3.0,,
+5_7_3,5_7,563,20170829,,West,0.5,Right,120,80,50,Branch,,Branch,Orange,2.0,,,,,
+5_7_4,5_7,564,20170829,,West,0.8,Right,50,40,20,Branch,,Branch,Orange,3.0,,,,3.0,
+5_7_5,5_7,565,20170829,,West,0.7,Under,,30,10,Branch,,Branch,Orange,2.0,,,,,
+5_7_6,5_7,566,20170829,,West,1.3,Left,75,15,15,Branch,,Branch,Orange,3.0,,,3.0,,3.0
+5_7_7,5_7,567,20170829,,West,1.9,Right,120,50,30,Branch,,Branch,Orange,2.0,,,3.0,,
+5_7_8,5_7,568,20170829,,West,3.5,Right,80,90,30,Hybrid,,Hybrid,Orange,3.0,,,,,
+5_7_9,5_7,569,20170829,,West,3.4,Left,100,30,25,Branch,,Branch,Orange,3.0,,,,,
+5_7_10,5_7,570,20170829,,West,4.1,Right,20,20,20,Branch,,Branch,Orange,2.0,,,,,
+5_7_11,5_7,571,20170829,,West,4.9,Left,60,20,15,Hybrid,,Hybrid,Orange,3.0,,,,,
+5_7_12,5_7,572,20170829,,West,5.5,Left,80,35,30,Branch,,Branch,Orange,2.0,,,,,
+5_7_13,5_7,573,20170829,,South,1.3,Under,,35,20,Branch,,Branch,Orange,2.0,,,3.0,,
+5_7_14,5_7,574,20170829,,South,2.2,Under,,25,20,Branch,,Branch,Orange,2.0,,,,,2.0
+5_7_15,5_7,575,20170829,,South,2.3,Right,80,30,20,Branch,,Branch,Orange,3.0,,,3.0,,2.0
+5_7_16,5_7,576,20170829,,South,3.8,Under,,30,30,Branch,,Hybrid,Orange,3.0,,,3.0,3.0,2.0
+5_7_17,5_7,577,20170829,,South,5.6,Right,20,70,50,Branch,,Hybrid,Brown,2.0,,,2.0,2.0,
+5_7_18,5_7,578,20170829,,South,6.4,Left,150,130,90,Plate,,Plate,Orange,3.0,,,,3.0,3.0
+5_7_19,5_7,579,20170829,,South,7.8,Left,10,50,40,Branch,,Branch,Orange,3.0,,,,3.0,3.0
+5_7_20,5_7,580,20170829,,South,9,Under,,50,50,Hybrid,no bag; Ford collected and put in tube directly,Hybrid,Orange,2.0,,,3.0,2.0,
+5_8_1,5_8,581,20170829,,West,0.1,Left,80,30,25,Hybrid,,Hybrid,Brown,3.0,,,,3.0,
+5_8_2,5_8,582,20170829,,West,0.3,Left,90,65,55,Branch,,Hybrid,Orange,3.0,,,,3.0,3.0
+5_8_3,5_8,583,20170829,,West,0.9,Left,40,50,40,Hybrid,,Hybrid,Orange,3.0,Y - blue,,,3.0,3.0
+5_8_4,5_8,584,20170829,,West,1.7,Left,90,50,25,Branch,,Branch,Brown,3.0,,,,3.0,3.0
+5_8_5,5_8,585,20170829,,West,1.1,Under,,45,25,Hybrid,,Hybrid,Orange,3.0,,,3.0,,
+5_8_6,5_8,586,20170829,,West,0.9,Right,30,35,30,Hybrid,,Branch,Orange,3.0,,,3.0,3.0,
+5_8_7,5_8,587,20170829,,West,1.8,Right,20,55,30,Hybrid,,Branch,Brown,2.0,,,3.0,3.0,3.0
+5_8_8,5_8,588,20170829,,West,2.3,Right,60,50,30,Hybrid,,Branch,Orange,3.0,,,,3.0,
+5_8_9,5_8,589,20170829,,West,2.4,Left,30,110,60,Branch,,Hybrid,Orange,3.0,,,3.0,3.0,3.0
+5_8_10,5_8,590,20170829,,West,3.3,Left,30,50,45,Branch,,Hybrid,Orange,3.0,,,,3.0,
+5_8_11,5_8,591,20170829,,West,3.8,Under,,50,35,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+5_8_12,5_8,592,20170829,,West,3.8,Right,30,30,25,Branch,,Branch,Orange,3.0,,,3.0,3.0,
+5_8_13,5_8,593,20170829,,West,4.3,Under,,80,30,Branch,,Hybrid,Orange,3.0,,,,,
+5_8_14,5_8,594,20170829,,West,5.4,Left,15,30,30,Branch,,Hybrid,Brown,3.0,,,3.0,3.0,3.0
+5_8_15,5_8,595,20170829,,West,5.7,Right,50,40,35,Branch,,Hybrid,Brown,3.0,,,,3.0,3.0
+5_8_16,5_8,596,20170829,,West,6.1,Left,25,70,50,Branch,,Branch,Brown,3.0,,,,,
+5_8_17,5_8,597,20170829,,West,7.8,Left,65,25,20,Branch,,Branch,Brown,3.0,Y - yellow,,2.0,3.0,
+5_8_18,5_8,598,20170829,,West,8.5,Right,25,25,15,Branch,,Hybrid,Orange,2.0,,,3.0,3.0,
+5_8_19,5_8,599,20170829,,West,9.8,Right,70,50,25,Branch,,Hybrid,Orange,3.0,,,,3.0,
+5_8_20,5_8,600,20170829,,West,10.2,Under,,70,50,Hybrid,,Hybrid,Orange,3.0,,,,,
