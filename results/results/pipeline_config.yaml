@@ -1,0 +1,60 @@
+analysis:
+  cv_folds: 3
+  cv_random_state: 42
+  cv_shuffle: true
+  cv_stratify: true
+  feature_importance_top_n: 15
+  feature_selection:
+    k_best: 50
+    method: mutual_info
+  output_dir: results/
+  preprocessing:
+    encode_categorical: label
+    handle_missing: median
+    scale_features: true
+  save_plots: true
+data:
+  data_path: data/
+  primary_file: bleaching.csv
+  random_state: 42
+  target_column: status
+  test_size: 0.2
+logging:
+  console_output: true
+  level: INFO
+  log_file: results/coral_prediction.log
+models:
+  neural_network:
+    batch_size: 32
+    dropout_rate: 0.3
+    early_stopping_patience: 10
+    epochs: 100
+    hidden_layers:
+    - 128
+    - 64
+    - 32
+    learning_rate: 0.001
+    random_state: 42
+    validation_split: 0.2
+  xgboost:
+    colsample_bytree: 0.8
+    eval_metric: logloss
+    learning_rate: 0.1
+    max_depth: 6
+    n_estimators: 100
+    objective: binary:logistic
+    random_state: 42
+    subsample: 0.8
+output:
+  plot_formats:
+  - png
+  - pdf
+  save_evaluation_metrics: true
+  save_feature_importance: true
+  save_models: true
+  save_predictions: true
+random_seeds:
+  global_seed: 42
+  numpy_seed: 42
+  sklearn_seed: 42
+  tensorflow_seed: 42

@@ -1,0 +1,77 @@
+# Coral Recovery Prediction Configuration
+
+# Data Configuration
+data:
+  data_path: "data/"
+  target_column: "status"
+  test_size: 0.2
+  random_state: 42
+  
+  # Primary data file for training
+  primary_file: "bleaching.csv"
+
+# Model Configurations
+models:
+  xgboost:
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+    subsample: 0.8
+    colsample_bytree: 0.8
+    random_state: 42
+    objective: "binary:logistic"
+    eval_metric: "logloss"
+    
+  neural_network:
+    hidden_layers: [128, 64, 32]
+    dropout_rate: 0.3
+    learning_rate: 0.001
+    epochs: 100
+    batch_size: 32
+    validation_split: 0.2
+    early_stopping_patience: 10
+    random_state: 42
+
+# Analysis Configuration
+analysis:
+  cv_folds: 3
+  feature_importance_top_n: 15
+  save_plots: true
+  output_dir: "results/"
+  
+  # Cross-validation settings
+  cv_random_state: 42
+  cv_shuffle: true
+  cv_stratify: true
+  
+  # Feature selection
+  feature_selection:
+    method: "mutual_info"
+    k_best: 50
+    
+  # Preprocessing
+  preprocessing:
+    handle_missing: "median"  # median, mean, drop
+    scale_features: true
+    encode_categorical: "label"  # onehot, label
+    
+# Output Configuration
+output:
+  save_models: true
+  save_predictions: true
+  save_feature_importance: true
+  save_evaluation_metrics: true
+  plot_formats: ["png", "pdf"]
+  
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  log_file: "results/coral_prediction.log"
+  console_output: true
+
+# Random Seeds for Reproducibility
+random_seeds:
+  global_seed: 42
+  numpy_seed: 42
+  tensorflow_seed: 42
+  sklearn_seed: 42

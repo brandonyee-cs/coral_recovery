@@ -1,0 +1,46 @@
+# Requirements for Coral Data Conversion Pipeline
+# ==============================================
+
+# Core data processing
+pandas>=1.3.0
+numpy>=1.20.0
+scipy>=1.7.0
+
+# File I/O
+openpyxl>=3.0.0          # For Excel files
+xlrd>=2.0.0              # For legacy Excel files  
+h5py>=3.0.0              # For HDF5 files (optional)
+
+# Scientific computing
+scikit-learn>=1.0.0      # For clustering and data processing
+statsmodels>=0.12.0      # For statistical analysis (optional)
+
+# Machine Learning
+xgboost>=1.5.0           # For XGBoost models
+tensorflow>=2.8.0        # For neural networks
+joblib>=1.1.0            # For model serialization
+
+# Data validation and quality control
+jsonschema>=3.2.0        # For JSON validation
+pyyaml>=5.4.0           # For YAML configuration files
+
+# Optional visualization dependencies
+matplotlib>=3.3.0        # For basic plotting
+seaborn>=0.11.0          # For statistical plotting
+
+# Optional advanced dependencies
+# missforest>=0.1.0      # For advanced imputation (if available)
+# rpy2>=3.4.0            # For R integration (if needed)
+
+# Development and testing (optional)
+pytest>=6.0.0            # For testing
+pytest-cov>=2.12.0       # For coverage reports
+black>=21.0.0            # For code formatting
+flake8>=3.9.0            # For linting
+
+# Documentation (optional)
+sphinx>=4.0.0            # For documentation generation
+sphinx-rtd-theme>=0.5.0  # For documentation theme
+
+# Command line interface
+argparse                 # Built-in, but listed for clarity
