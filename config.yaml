@@ -13,24 +13,34 @@ data:
 # Model Configurations
 models:
   xgboost:
-    n_estimators: 100
+    n_estimators: 200
     max_depth: 6
-    learning_rate: 0.1
+    learning_rate: 0.08
     subsample: 0.8
     colsample_bytree: 0.8
+    colsample_bylevel: 0.8
+    reg_alpha: 0.05
+    reg_lambda: 0.5
+    min_child_weight: 5
+    gamma: 0.05
     random_state: 42
     objective: "binary:logistic"
     eval_metric: "logloss"
+    scale_pos_weight: 4.5  # Handle class imbalance
     
   neural_network:
-    hidden_layers: [128, 64, 32]
-    dropout_rate: 0.3
-    learning_rate: 0.001
-    epochs: 100
-    batch_size: 32
-    validation_split: 0.2
-    early_stopping_patience: 10
+    hidden_layers: [256, 128, 64, 32]
+    dropout_rate: 0.4
+    learning_rate: 0.0005
+    epochs: 150
+    batch_size: 64
+    validation_split: 0.25
+    early_stopping_patience: 15
     random_state: 42
+    class_weight: {0: 0.55, 1: 2.45}  # Handle class imbalance
+    
+  ensemble:
+    weights: [0.6, 0.4]  # XGBoost weight, Neural Network weight
 
 # Analysis Configuration
 analysis:
@@ -46,7 +56,7 @@ analysis:
   
   # Feature selection
   feature_selection:
-    method: "mutual_info"
+    method: "mutual_info"  # mutual_info, rfe, tree_based
     k_best: 50
     
   # Preprocessing
@@ -54,6 +64,8 @@ analysis:
     handle_missing: "median"  # median, mean, drop
     scale_features: true
     encode_categorical: "label"  # onehot, label
+    resampling: null  # smote, adasyn, smoteenn, undersample, null
+    threshold_optimization: true  # Optimize classification threshold
     
 # Output Configuration
 output:
