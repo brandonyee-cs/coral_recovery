@@ -11,7 +11,9 @@ analysis:
   preprocessing:
     encode_categorical: label
     handle_missing: median
+    resampling: null
     scale_features: true
+    threshold_optimization: true
   save_plots: true
 data:
   data_path: data/
@@ -24,26 +26,40 @@ logging:
   level: INFO
   log_file: results/coral_prediction.log
 models:
+  ensemble:
+    weights:
+    - 0.6
+    - 0.4
   neural_network:
-    batch_size: 32
-    dropout_rate: 0.3
-    early_stopping_patience: 10
-    epochs: 100
+    batch_size: 64
+    class_weight:
+      0: 0.55
+      1: 2.45
+    dropout_rate: 0.4
+    early_stopping_patience: 15
+    epochs: 150
     hidden_layers:
+    - 256
     - 128
     - 64
     - 32
-    learning_rate: 0.001
+    learning_rate: 0.0005
     random_state: 42
-    validation_split: 0.2
+    validation_split: 0.25
   xgboost:
+    colsample_bylevel: 0.8
     colsample_bytree: 0.8
     eval_metric: logloss
-    learning_rate: 0.1
+    gamma: 0.05
+    learning_rate: 0.08
     max_depth: 6
-    n_estimators: 100
+    min_child_weight: 5
+    n_estimators: 200
     objective: binary:logistic
     random_state: 42
+    reg_alpha: 0.05
+    reg_lambda: 0.5
+    scale_pos_weight: 4.5
     subsample: 0.8
 output:
   plot_formats:

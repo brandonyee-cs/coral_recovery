@@ -156,36 +156,46 @@ class CoralPredictionPipeline:
             self.logger.error(f"Error in data loading and processing: {e}")
             raise
     
-    def prepare_training_data(self) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
-        """Prepare data for model training."""
+    def prepare_training_data(self) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.Series, pd.Series, pd.Series]:
+        """Prepare data for model training with validation split."""
         self.logger.info("Preparing training data...")
         
         try:
             # Split data
             X_train, X_test, y_train, y_test = self.data_processor.split_data(self.processed_data)
             
+            # Further split training data for validation (for threshold optimization)
+            from sklearn.model_selection import train_test_split
+            X_train_split, X_val, y_train_split, y_val = train_test_split(
+                X_train, y_train, test_size=0.2, random_state=42, 
+                stratify=y_train if len(y_train.unique()) > 1 else None
+            )
+            
             # Feature selection
-            X_train_selected, selected_features = self.data_processor.perform_feature_selection(X_train, y_train)
+            X_train_selected, selected_features = self.data_processor.perform_feature_selection(X_train_split, y_train_split)
+            X_val_selected = X_val[selected_features]
             X_test_selected = X_test[selected_features]
             
             self.logger.info(f"Selected {len(selected_features)} features for training")
-            self.logger.info(f"Training set: {X_train_selected.shape}, Test set: {X_test_selected.shape}")
+            self.logger.info(f"Training set: {X_train_selected.shape}, Validation set: {X_val_selected.shape}, Test set: {X_test_selected.shape}")
             
             # Log class distribution
-            train_distribution = y_train.value_counts(normalize=True)
+            train_distribution = y_train_split.value_counts(normalize=True)
+            val_distribution = y_val.value_counts(normalize=True)
             test_distribution = y_test.value_counts(normalize=True)
             
             self.logger.info(f"Training set class distribution: {dict(train_distribution)}")
+            self.logger.info(f"Validation set class distribution: {dict(val_distribution)}")
             self.logger.info(f"Test set class distribution: {dict(test_distribution)}")
             
-            return X_train_selected, X_test_selected, y_train, y_test
+            return X_train_selected, X_val_selected, X_test_selected, y_train_split, y_val, y_test
             
         except Exception as e:
             self.logger.error(f"Error preparing training data: {e}")
             raise
     
-    def train_models(self, X_train: pd.DataFrame, y_train: pd.Series) -> None:
-        """Train both XGBoost and Neural Network models."""
+    def train_models(self, X_train: pd.DataFrame, X_val: pd.DataFrame, y_train: pd.Series, y_val: pd.Series) -> None:
+        """Train both XGBoost and Neural Network models with threshold optimization."""
         self.logger.info("=" * 60)
         self.logger.info("PHASE 2: MODEL TRAINING")
         self.logger.info("=" * 60)
@@ -195,6 +205,11 @@ class CoralPredictionPipeline:
             self.logger.info("Training XGBoost model...")
             xgb_model = create_model('xgboost', self.config)
             xgb_model.fit(X_train, y_train)
+            
+            # Optimize threshold if configured
+            if self.config['analysis']['preprocessing'].get('threshold_optimization', False):
+                xgb_model.optimize_threshold(X_val, y_val)
+            
             self.models['XGBoost'] = xgb_model
             self.logger.info("XGBoost model training completed")
             
@@ -203,10 +218,27 @@ class CoralPredictionPipeline:
                 self.logger.info("Training Neural Network model...")
                 nn_model = create_model('neural_network', self.config)
                 nn_model.fit(X_train, y_train)
+                
+                # Optimize threshold if configured
+                if self.config['analysis']['preprocessing'].get('threshold_optimization', False):
+                    nn_model.optimize_threshold(X_val, y_val)
+                
                 self.models['Neural Network'] = nn_model
                 self.logger.info("Neural Network model training completed")
+                
+                # Train Ensemble model
+                self.logger.info("Training Ensemble model...")
+                ensemble_model = create_model('ensemble', self.config)
+                ensemble_model.fit(X_train, y_train)
+                
+                # Optimize threshold if configured
+                if self.config['analysis']['preprocessing'].get('threshold_optimization', False):
+                    ensemble_model.optimize_threshold(X_val, y_val)
+                
+                self.models['Ensemble'] = ensemble_model
+                self.logger.info("Ensemble model training completed")
             else:
-                self.logger.warning("Skipping Neural Network model training - TensorFlow not available")
+                self.logger.warning("Skipping Neural Network and Ensemble model training - TensorFlow not available")
             
             self.logger.info(f"Successfully trained {len(self.models)} models")
             
@@ -385,10 +417,10 @@ class CoralPredictionPipeline:
             self.load_and_process_data()
             
             # Phase 2: Prepare Training Data
-            X_train, X_test, y_train, y_test = self.prepare_training_data()
+            X_train, X_val, X_test, y_train, y_val, y_test = self.prepare_training_data()
             
             # Phase 3: Model Training
-            self.train_models(X_train, y_train)
+            self.train_models(X_train, X_val, y_train, y_val)
             
             # Phase 4: Model Evaluation
             self.evaluate_models(X_test, y_test)

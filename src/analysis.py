@@ -15,9 +15,19 @@ import warnings
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional, Union
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
-from sklearn.feature_selection import mutual_info_classif, SelectKBest
-from sklearn.model_selection import train_test_split
+from sklearn.feature_selection import mutual_info_classif, SelectKBest, RFE, SelectFromModel
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split, StratifiedKFold
 from sklearn.impute import SimpleImputer
+# Try to import imbalanced-learn, fall back gracefully if not available
+try:
+    from imblearn.over_sampling import SMOTE, ADASYN
+    from imblearn.under_sampling import RandomUnderSampler
+    from imblearn.combine import SMOTEENN
+    IMBLEARN_AVAILABLE = True
+except ImportError:
+    IMBLEARN_AVAILABLE = False
+    logger.warning("imbalanced-learn not available. Resampling features will be disabled.")
 import yaml
 
 # Suppress warnings for cleaner output
@@ -346,9 +356,10 @@ class CoralDataProcessor:
             
             # Create depth-based features
             if 'depth_m' in df_engineered.columns:
-                df_engineered['depth_category'] = pd.cut(df_engineered['depth_m'], 
-                                                       bins=[0, 1.5, 3, 4, float('inf')], 
-                                                       labels=['shallow', 'medium', 'deep', 'very_deep'])
+                depth_bins = pd.cut(df_engineered['depth_m'], 
+                                  bins=[0, 1.5, 3, 4, float('inf')], 
+                                  labels=[0, 1, 2, 3])  # Use numeric labels
+                df_engineered['depth_category'] = depth_bins.astype(float)
                 df_engineered['is_deep_site'] = (df_engineered['depth_m'] > 3).astype(int)
             
             # Create thermal stress features from DHW data
@@ -362,9 +373,10 @@ class CoralDataProcessor:
                 
                 # Create thermal stress categories
                 if 'dhw' in df_engineered.columns:
-                    df_engineered['thermal_stress_level'] = pd.cut(df_engineered['dhw'], 
-                                                                 bins=[0, 2, 4, 8, float('inf')], 
-                                                                 labels=['low', 'moderate', 'high', 'severe'])
+                    thermal_bins = pd.cut(df_engineered['dhw'], 
+                                        bins=[0, 2, 4, 8, float('inf')], 
+                                        labels=[0, 1, 2, 3])  # Use numeric labels
+                    df_engineered['thermal_stress_level'] = thermal_bins.astype(float)
             
             # Create sedimentation features from g/day columns
             sedimentation_cols = [col for col in df_engineered.columns if 'g_day' in col and '_mean' in col]
@@ -429,16 +441,83 @@ class CoralDataProcessor:
                 for species in common_species:
                     df_engineered[f'is_{species.replace(" ", "_").lower()}'] = (df_engineered['sub'] == species).astype(int)
             
-            # Create interaction features
+            # Create advanced interaction features
             if 'depth_m' in df_engineered.columns and 'dhw' in df_engineered.columns:
                 depth_clean = df_engineered['depth_m'].fillna(df_engineered['depth_m'].median())
                 dhw_clean = df_engineered['dhw'].fillna(df_engineered['dhw'].median())
                 df_engineered['depth_thermal_interaction'] = depth_clean * (1 / (dhw_clean + 1))
+                df_engineered['depth_thermal_stress'] = depth_clean * dhw_clean
+                df_engineered['thermal_protection_index'] = depth_clean / (dhw_clean + 0.1)
             
             if 'avg_sedimentation' in df_engineered.columns and 'depth_m' in df_engineered.columns:
                 depth_clean = df_engineered['depth_m'].fillna(df_engineered['depth_m'].median())
                 sed_clean = df_engineered['avg_sedimentation'].fillna(df_engineered['avg_sedimentation'].median())
                 df_engineered['depth_sedimentation_interaction'] = depth_clean / (sed_clean + 0.001)
+                df_engineered['sedimentation_stress_index'] = sed_clean * (1 / (depth_clean + 0.1))
+            
+            # Create coral resilience features
+            if 'coral_length_cm_mean' in df_engineered.columns and 'coral_health_initial_mean' in df_engineered.columns:
+                length_clean = df_engineered['coral_length_cm_mean'].fillna(df_engineered['coral_length_cm_mean'].median())
+                health_clean = df_engineered['coral_health_initial_mean'].fillna(df_engineered['coral_health_initial_mean'].median())
+                df_engineered['size_health_interaction'] = length_clean * health_clean
+                df_engineered['resilience_index'] = (length_clean * health_clean) / (dhw_clean + 1) if 'dhw' in df_engineered.columns else length_clean * health_clean
+            
+            # Create temporal health change features
+            health_cols = ['coral_health_initial_mean', 'coral_health_t1_mean', 'coral_health_t2_mean']
+            available_health_cols = [col for col in health_cols if col in df_engineered.columns]
+            
+            if len(available_health_cols) >= 2:
+                if 'coral_health_t1_mean' in df_engineered.columns and 'coral_health_initial_mean' in df_engineered.columns:
+                    df_engineered['health_change_t1'] = df_engineered['coral_health_t1_mean'] - df_engineered['coral_health_initial_mean']
+                
+                if 'coral_health_t2_mean' in df_engineered.columns and 'coral_health_t1_mean' in df_engineered.columns:
+                    df_engineered['health_change_t2'] = df_engineered['coral_health_t2_mean'] - df_engineered['coral_health_t1_mean']
+                
+                if 'coral_health_t2_mean' in df_engineered.columns and 'coral_health_initial_mean' in df_engineered.columns:
+                    df_engineered['total_health_change'] = df_engineered['coral_health_t2_mean'] - df_engineered['coral_health_initial_mean']
+            
+            # Create environmental stress composite features
+            stress_factors = []
+            if 'dhw' in df_engineered.columns:
+                stress_factors.append('dhw')
+            if 'avg_sedimentation' in df_engineered.columns:
+                stress_factors.append('avg_sedimentation')
+            
+            if len(stress_factors) >= 2:
+                # Normalize stress factors and create composite
+                for factor in stress_factors:
+                    factor_clean = df_engineered[factor].fillna(df_engineered[factor].median())
+                    factor_normalized = (factor_clean - factor_clean.min()) / (factor_clean.max() - factor_clean.min() + 0.001)
+                    df_engineered[f'{factor}_normalized'] = factor_normalized
+                
+                df_engineered['composite_stress_index'] = df_engineered[[f'{f}_normalized' for f in stress_factors]].mean(axis=1)
+            
+            # Create polynomial features for key variables
+            if 'dhw' in df_engineered.columns:
+                dhw_clean = df_engineered['dhw'].fillna(df_engineered['dhw'].median())
+                df_engineered['dhw_squared'] = dhw_clean ** 2
+                df_engineered['dhw_log'] = np.log1p(dhw_clean)  # log(1+x) to handle zeros
+            
+            if 'depth_m' in df_engineered.columns:
+                depth_clean = df_engineered['depth_m'].fillna(df_engineered['depth_m'].median())
+                df_engineered['depth_squared'] = depth_clean ** 2
+                df_engineered['depth_log'] = np.log1p(depth_clean)
+            
+            # Create ratio features
+            if 'coral_length_cm_mean' in df_engineered.columns and 'coral_width_cm_mean' in df_engineered.columns:
+                length_clean = df_engineered['coral_length_cm_mean'].fillna(df_engineered['coral_length_cm_mean'].median())
+                width_clean = df_engineered['coral_width_cm_mean'].fillna(df_engineered['coral_width_cm_mean'].median())
+                df_engineered['coral_size_ratio'] = length_clean / (width_clean + 0.001)
+                df_engineered['coral_perimeter_estimate'] = 2 * (length_clean + width_clean)
+            
+            # Create binned features for continuous variables
+            if 'dhw' in df_engineered.columns:
+                dhw_clean = df_engineered['dhw'].fillna(df_engineered['dhw'].median())
+                df_engineered['dhw_bin'] = pd.cut(dhw_clean, bins=5, labels=False).astype(float)
+            
+            if 'depth_m' in df_engineered.columns:
+                depth_clean = df_engineered['depth_m'].fillna(df_engineered['depth_m'].median())
+                df_engineered['depth_bin'] = pd.cut(depth_clean, bins=5, labels=False).astype(float)
             
             logger.info(f"Feature engineering complete. New shape: {df_engineered.shape}")
             return df_engineered
@@ -494,6 +573,54 @@ class CoralDataProcessor:
                 logger.info(f"Feature selection complete. Selected {len(selected_numeric_features)} numeric + {len(categorical_features)} categorical = {len(all_selected_features)} total features")
                 return X_selected_df, all_selected_features
             
+            elif method == 'rfe':
+                # Use Recursive Feature Elimination with Random Forest
+                numeric_features = X.select_dtypes(include=[np.number]).columns.tolist()
+                
+                if len(numeric_features) == 0:
+                    logger.warning("No numeric features found for RFE")
+                    return X, X.columns.tolist()
+                
+                X_numeric = X[numeric_features].fillna(X[numeric_features].median())
+                
+                # Use Random Forest as base estimator
+                rf = RandomForestClassifier(n_estimators=50, random_state=42, n_jobs=-1)
+                selector = RFE(rf, n_features_to_select=min(k_best, X_numeric.shape[1]))
+                selector.fit(X_numeric, y)
+                
+                selected_numeric_features = X_numeric.columns[selector.support_].tolist()
+                categorical_features = X.select_dtypes(exclude=[np.number]).columns.tolist()
+                all_selected_features = selected_numeric_features + categorical_features
+                
+                X_selected_df = X[all_selected_features].copy()
+                
+                logger.info(f"RFE feature selection complete. Selected {len(selected_numeric_features)} numeric + {len(categorical_features)} categorical = {len(all_selected_features)} total features")
+                return X_selected_df, all_selected_features
+            
+            elif method == 'tree_based':
+                # Use tree-based feature importance
+                numeric_features = X.select_dtypes(include=[np.number]).columns.tolist()
+                
+                if len(numeric_features) == 0:
+                    logger.warning("No numeric features found for tree-based selection")
+                    return X, X.columns.tolist()
+                
+                X_numeric = X[numeric_features].fillna(X[numeric_features].median())
+                
+                # Use Random Forest for feature importance
+                rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)
+                selector = SelectFromModel(rf, max_features=min(k_best, X_numeric.shape[1]))
+                selector.fit(X_numeric, y)
+                
+                selected_numeric_features = X_numeric.columns[selector.get_support()].tolist()
+                categorical_features = X.select_dtypes(exclude=[np.number]).columns.tolist()
+                all_selected_features = selected_numeric_features + categorical_features
+                
+                X_selected_df = X[all_selected_features].copy()
+                
+                logger.info(f"Tree-based feature selection complete. Selected {len(selected_numeric_features)} numeric + {len(categorical_features)} categorical = {len(all_selected_features)} total features")
+                return X_selected_df, all_selected_features
+            
             else:
                 logger.info("No feature selection applied")
                 return X, X.columns.tolist()
@@ -504,7 +631,7 @@ class CoralDataProcessor:
     
     def split_data(self, df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
         """
-        Split data into training and testing sets.
+        Split data into training and testing sets with optional resampling.
         
         Args:
             df: Input DataFrame with features and target
@@ -528,12 +655,100 @@ class CoralDataProcessor:
                 stratify=y if len(y.unique()) > 1 else None
             )
             
+            # Apply resampling to training data if configured and available
+            resampling_method = self.config['analysis']['preprocessing'].get('resampling', None)
+            
+            if resampling_method and len(y_train.unique()) > 1 and IMBLEARN_AVAILABLE:
+                logger.info(f"Applying {resampling_method} resampling to training data...")
+                X_train, y_train = self._apply_resampling(X_train, y_train, resampling_method)
+                logger.info(f"After resampling - Train: {X_train.shape}")
+                logger.info(f"New class distribution: {y_train.value_counts(normalize=True).to_dict()}")
+            elif resampling_method and not IMBLEARN_AVAILABLE:
+                logger.warning("Resampling requested but imbalanced-learn not available. Skipping resampling.")
+            
             logger.info(f"Data split complete. Train: {X_train.shape}, Test: {X_test.shape}")
             return X_train, X_test, y_train, y_test
             
         except Exception as e:
             logger.error(f"Error splitting data: {e}")
             raise
+    
+    def _apply_resampling(self, X_train: pd.DataFrame, y_train: pd.Series, method: str) -> Tuple[pd.DataFrame, pd.Series]:
+        """
+        Apply resampling techniques to handle class imbalance.
+        
+        Args:
+            X_train: Training features
+            y_train: Training targets
+            method: Resampling method ('smote', 'adasyn', 'smoteenn', 'undersample')
+            
+        Returns:
+            Tuple of resampled (X_train, y_train)
+        """
+        try:
+            random_state = self.config['data']['random_state']
+            
+            # Only use numeric features for resampling
+            numeric_features = X_train.select_dtypes(include=[np.number]).columns
+            X_numeric = X_train[numeric_features].copy()
+            
+            # Handle any remaining NaN values
+            X_numeric = X_numeric.fillna(X_numeric.median())
+            
+            if method.lower() == 'smote':
+                sampler = SMOTE(random_state=random_state, k_neighbors=min(5, len(y_train[y_train==1])-1))
+            elif method.lower() == 'adasyn':
+                sampler = ADASYN(random_state=random_state, n_neighbors=min(5, len(y_train[y_train==1])-1))
+            elif method.lower() == 'smoteenn':
+                sampler = SMOTEENN(random_state=random_state)
+            elif method.lower() == 'undersample':
+                sampler = RandomUnderSampler(random_state=random_state)
+            else:
+                logger.warning(f"Unknown resampling method: {method}")
+                return X_train, y_train
+            
+            # Apply resampling
+            X_resampled, y_resampled = sampler.fit_resample(X_numeric, y_train)
+            
+            # Convert back to DataFrame
+            X_resampled_df = pd.DataFrame(X_resampled, columns=numeric_features)
+            
+            # Add back categorical features (replicate for new samples)
+            categorical_features = X_train.select_dtypes(exclude=[np.number]).columns
+            if len(categorical_features) > 0:
+                # For new samples, use mode of minority class
+                minority_class = y_train.value_counts().idxmin()
+                minority_mask = y_train == minority_class
+                minority_categorical = X_train.loc[minority_mask, categorical_features].mode().iloc[0]
+                
+                # Create categorical data for resampled dataset
+                categorical_resampled = pd.DataFrame(
+                    index=X_resampled_df.index,
+                    columns=categorical_features
+                )
+                
+                # Fill with original values for original samples and mode for new samples
+                original_indices = X_resampled_df.index[:len(X_train)]
+                new_indices = X_resampled_df.index[len(X_train):]
+                
+                if len(original_indices) > 0:
+                    categorical_resampled.loc[original_indices] = X_train[categorical_features].values
+                
+                if len(new_indices) > 0:
+                    for col in categorical_features:
+                        categorical_resampled.loc[new_indices, col] = minority_categorical[col]
+                
+                # Combine numeric and categorical
+                X_resampled_df = pd.concat([X_resampled_df, categorical_resampled], axis=1)
+            
+            # Ensure column order matches original
+            X_resampled_df = X_resampled_df[X_train.columns]
+            
+            return X_resampled_df, pd.Series(y_resampled, name=y_train.name)
+            
+        except Exception as e:
+            logger.error(f"Error applying resampling: {e}")
+            return X_train, y_train
 
 
 class FeatureAnalyzer:
